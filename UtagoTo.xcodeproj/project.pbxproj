@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A10000001 /* UtagoToApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000001 /* UtagoToApp.swift */; };
+		A10000002 /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000002 /* AppContainer.swift */; };
+		A10000003 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000003 /* Song.swift */; };
+		A10000004 /* LyricLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000004 /* LyricLine.swift */; };
+		A10000005 /* VocabEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000005 /* VocabEntry.swift */; };
+		A10000006 /* WordAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000006 /* WordAppearance.swift */; };
+		A10000007 /* JLPTLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000007 /* JLPTLevel.swift */; };
+		A10000008 /* PlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000008 /* PlayerViewModel.swift */; };
+		A10000009 /* LibraryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000009 /* LibraryViewModel.swift */; };
+		A10000010 /* VocabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010 /* VocabViewModel.swift */; };
+		A10000011 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000011 /* LibraryView.swift */; };
+		A10000012 /* SongRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000012 /* SongRowView.swift */; };
+		A10000013 /* AddSongView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000013 /* AddSongView.swift */; };
+		A10000014 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000014 /* PlayerView.swift */; };
+		A10000015 /* LyricScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000015 /* LyricScrollView.swift */; };
+		A10000016 /* LyricLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000016 /* LyricLineView.swift */; };
+		A10000017 /* WordTokenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000017 /* WordTokenView.swift */; };
+		A10000018 /* VocabListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000018 /* VocabListView.swift */; };
+		A10000019 /* VocabCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000019 /* VocabCardView.swift */; };
+		A10000020 /* WordDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000020 /* WordDetailView.swift */; };
+		A10000021 /* JLPTBadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000021 /* JLPTBadgeView.swift */; };
+		A10000022 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000022 /* EmptyStateView.swift */; };
+		A10000023 /* LyricParserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000023 /* LyricParserService.swift */; };
+		A10000024 /* JLPTDictionaryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000024 /* JLPTDictionaryService.swift */; };
+		A10000025 /* AudioSyncService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000025 /* AudioSyncService.swift */; };
+		A10000026 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000026 /* SampleData.swift */; };
+		A10000030 /* jlpt_n1.json in Resources */ = {isa = PBXBuildFile; fileRef = A20000030 /* jlpt_n1.json */; };
+		A10000031 /* jlpt_n2.json in Resources */ = {isa = PBXBuildFile; fileRef = A20000031 /* jlpt_n2.json */; };
+		A10000032 /* jlpt_n3.json in Resources */ = {isa = PBXBuildFile; fileRef = A20000032 /* jlpt_n3.json */; };
+		A10000033 /* jlpt_n4.json in Resources */ = {isa = PBXBuildFile; fileRef = A20000033 /* jlpt_n4.json */; };
+		A10000034 /* jlpt_n5.json in Resources */ = {isa = PBXBuildFile; fileRef = A20000034 /* jlpt_n5.json */; };
+		A10000040 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A20000040 /* Assets.xcassets */; };
+		EED4B1582FA8DD0800653A97 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED4B1572FA8DD0800653A97 /* SettingsView.swift */; };
+		EED4B15A2FA8DD3400653A97 /* SongSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED4B1592FA8DD3400653A97 /* SongSearchView.swift */; };
+		EED4B15F2FA8E9BF00653A97 /* APIKeyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED4B15E2FA8E9BF00653A97 /* APIKeyManager.swift */; };
+		EED4B1612FA8E9C700653A97 /* LRCLibService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED4B1602FA8E9C700653A97 /* LRCLibService.swift */; };
+		EED4B1632FA8E9D700653A97 /* SpotifyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED4B1622FA8E9D700653A97 /* SpotifyService.swift */; };
+		EED4B1652FA8E9E100653A97 /* YouTubeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED4B1642FA8E9E100653A97 /* YouTubeService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A20000001 /* UtagoToApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtagoToApp.swift; sourceTree = "<group>"; };
+		A20000002 /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
+		A20000003 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		A20000004 /* LyricLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyricLine.swift; sourceTree = "<group>"; };
+		A20000005 /* VocabEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabEntry.swift; sourceTree = "<group>"; };
+		A20000006 /* WordAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordAppearance.swift; sourceTree = "<group>"; };
+		A20000007 /* JLPTLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JLPTLevel.swift; sourceTree = "<group>"; };
+		A20000008 /* PlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewModel.swift; sourceTree = "<group>"; };
+		A20000009 /* LibraryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewModel.swift; sourceTree = "<group>"; };
+		A20000010 /* VocabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabViewModel.swift; sourceTree = "<group>"; };
+		A20000011 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
+		A20000012 /* SongRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongRowView.swift; sourceTree = "<group>"; };
+		A20000013 /* AddSongView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSongView.swift; sourceTree = "<group>"; };
+		A20000014 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		A20000015 /* LyricScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyricScrollView.swift; sourceTree = "<group>"; };
+		A20000016 /* LyricLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyricLineView.swift; sourceTree = "<group>"; };
+		A20000017 /* WordTokenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordTokenView.swift; sourceTree = "<group>"; };
+		A20000018 /* VocabListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabListView.swift; sourceTree = "<group>"; };
+		A20000019 /* VocabCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabCardView.swift; sourceTree = "<group>"; };
+		A20000020 /* WordDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordDetailView.swift; sourceTree = "<group>"; };
+		A20000021 /* JLPTBadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JLPTBadgeView.swift; sourceTree = "<group>"; };
+		A20000022 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		A20000023 /* LyricParserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyricParserService.swift; sourceTree = "<group>"; };
+		A20000024 /* JLPTDictionaryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JLPTDictionaryService.swift; sourceTree = "<group>"; };
+		A20000025 /* AudioSyncService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSyncService.swift; sourceTree = "<group>"; };
+		A20000026 /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
+		A20000030 /* jlpt_n1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = jlpt_n1.json; sourceTree = "<group>"; };
+		A20000031 /* jlpt_n2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = jlpt_n2.json; sourceTree = "<group>"; };
+		A20000032 /* jlpt_n3.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = jlpt_n3.json; sourceTree = "<group>"; };
+		A20000033 /* jlpt_n4.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = jlpt_n4.json; sourceTree = "<group>"; };
+		A20000034 /* jlpt_n5.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = jlpt_n5.json; sourceTree = "<group>"; };
+		A20000040 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A20000099 /* UtagoTo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UtagoTo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EED4B1572FA8DD0800653A97 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		EED4B1592FA8DD3400653A97 /* SongSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongSearchView.swift; sourceTree = "<group>"; };
+		EED4B15E2FA8E9BF00653A97 /* APIKeyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeyManager.swift; sourceTree = "<group>"; };
+		EED4B1602FA8E9C700653A97 /* LRCLibService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LRCLibService.swift; sourceTree = "<group>"; };
+		EED4B1622FA8E9D700653A97 /* SpotifyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyService.swift; sourceTree = "<group>"; };
+		EED4B1642FA8E9E100653A97 /* YouTubeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A30000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A40000001 = {
+			isa = PBXGroup;
+			children = (
+				A40000002 /* UtagoTo */,
+				A40000099 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A40000002 /* UtagoTo */ = {
+			isa = PBXGroup;
+			children = (
+				A40000003 /* App */,
+				A40000004 /* Models */,
+				A40000005 /* ViewModels */,
+				A40000006 /* Views */,
+				A40000010 /* Services */,
+				A40000011 /* Resources */,
+				A40000012 /* Preview Content */,
+				A20000040 /* Assets.xcassets */,
+			);
+			path = UtagoTo;
+			sourceTree = "<group>";
+		};
+		A40000003 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A20000001 /* UtagoToApp.swift */,
+				A20000002 /* AppContainer.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A40000004 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A20000003 /* Song.swift */,
+				A20000004 /* LyricLine.swift */,
+				A20000005 /* VocabEntry.swift */,
+				A20000006 /* WordAppearance.swift */,
+				A20000007 /* JLPTLevel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A40000005 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A20000008 /* PlayerViewModel.swift */,
+				A20000009 /* LibraryViewModel.swift */,
+				A20000010 /* VocabViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A40000006 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A40000007 /* Library */,
+				A40000008 /* Player */,
+				A40000009 /* Vocab */,
+				A4000000A /* Common */,
+				EED4B14E2FA8DCB000653A97 /* Settings */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A40000007 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				A20000011 /* LibraryView.swift */,
+				A20000012 /* SongRowView.swift */,
+				A20000013 /* AddSongView.swift */,
+				EED4B1592FA8DD3400653A97 /* SongSearchView.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		A40000008 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				A20000014 /* PlayerView.swift */,
+				A20000015 /* LyricScrollView.swift */,
+				A20000016 /* LyricLineView.swift */,
+				A20000017 /* WordTokenView.swift */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		A40000009 /* Vocab */ = {
+			isa = PBXGroup;
+			children = (
+				A20000018 /* VocabListView.swift */,
+				A20000019 /* VocabCardView.swift */,
+				A20000020 /* WordDetailView.swift */,
+			);
+			path = Vocab;
+			sourceTree = "<group>";
+		};
+		A4000000A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A20000021 /* JLPTBadgeView.swift */,
+				A20000022 /* EmptyStateView.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A40000010 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A20000023 /* LyricParserService.swift */,
+				A20000024 /* JLPTDictionaryService.swift */,
+				A20000025 /* AudioSyncService.swift */,
+				EED4B15E2FA8E9BF00653A97 /* APIKeyManager.swift */,
+				EED4B1602FA8E9C700653A97 /* LRCLibService.swift */,
+				EED4B1622FA8E9D700653A97 /* SpotifyService.swift */,
+				EED4B1642FA8E9E100653A97 /* YouTubeService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A40000011 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A20000030 /* jlpt_n1.json */,
+				A20000031 /* jlpt_n2.json */,
+				A20000032 /* jlpt_n3.json */,
+				A20000033 /* jlpt_n4.json */,
+				A20000034 /* jlpt_n5.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A40000012 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A20000026 /* SampleData.swift */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A40000099 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A20000099 /* UtagoTo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EED4B14E2FA8DCB000653A97 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				EED4B1572FA8DD0800653A97 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A50000001 /* UtagoTo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A70000003 /* Build configuration list for PBXNativeTarget "UtagoTo" */;
+			buildPhases = (
+				A60000001 /* Sources */,
+				A30000001 /* Frameworks */,
+				A60000002 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UtagoTo;
+			productName = UtagoTo;
+			productReference = A20000099 /* UtagoTo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A80000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					A50000001 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = A70000001 /* Build configuration list for PBXProject "UtagoTo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = ko;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ko,
+				ja,
+			);
+			mainGroup = A40000001;
+			productRefGroup = A40000099 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A50000001 /* UtagoTo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A60000002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000030 /* jlpt_n1.json in Resources */,
+				A10000031 /* jlpt_n2.json in Resources */,
+				A10000032 /* jlpt_n3.json in Resources */,
+				A10000033 /* jlpt_n4.json in Resources */,
+				A10000034 /* jlpt_n5.json in Resources */,
+				A10000040 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A60000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EED4B1612FA8E9C700653A97 /* LRCLibService.swift in Sources */,
+				A10000001 /* UtagoToApp.swift in Sources */,
+				A10000002 /* AppContainer.swift in Sources */,
+				A10000003 /* Song.swift in Sources */,
+				A10000004 /* LyricLine.swift in Sources */,
+				A10000005 /* VocabEntry.swift in Sources */,
+				EED4B1652FA8E9E100653A97 /* YouTubeService.swift in Sources */,
+				A10000006 /* WordAppearance.swift in Sources */,
+				A10000007 /* JLPTLevel.swift in Sources */,
+				A10000008 /* PlayerViewModel.swift in Sources */,
+				A10000009 /* LibraryViewModel.swift in Sources */,
+				A10000010 /* VocabViewModel.swift in Sources */,
+				A10000011 /* LibraryView.swift in Sources */,
+				A10000012 /* SongRowView.swift in Sources */,
+				EED4B1632FA8E9D700653A97 /* SpotifyService.swift in Sources */,
+				A10000013 /* AddSongView.swift in Sources */,
+				A10000014 /* PlayerView.swift in Sources */,
+				A10000015 /* LyricScrollView.swift in Sources */,
+				A10000016 /* LyricLineView.swift in Sources */,
+				A10000017 /* WordTokenView.swift in Sources */,
+				A10000018 /* VocabListView.swift in Sources */,
+				A10000019 /* VocabCardView.swift in Sources */,
+				A10000020 /* WordDetailView.swift in Sources */,
+				A10000021 /* JLPTBadgeView.swift in Sources */,
+				EED4B15A2FA8DD3400653A97 /* SongSearchView.swift in Sources */,
+				A10000022 /* EmptyStateView.swift in Sources */,
+				EED4B15F2FA8E9BF00653A97 /* APIKeyManager.swift in Sources */,
+				A10000023 /* LyricParserService.swift in Sources */,
+				A10000024 /* JLPTDictionaryService.swift in Sources */,
+				A10000025 /* AudioSyncService.swift in Sources */,
+				EED4B1582FA8DD0800653A97 /* SettingsView.swift in Sources */,
+				A10000026 /* SampleData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A90000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A90000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A90000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"UtagoTo/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UtagoTo/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "うたゴト";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourname.utagoto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A90000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"UtagoTo/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UtagoTo/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "うたゴト";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourname.utagoto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A70000001 /* Build configuration list for PBXProject "UtagoTo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A90000001 /* Debug */,
+				A90000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A70000003 /* Build configuration list for PBXNativeTarget "UtagoTo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A90000003 /* Debug */,
+				A90000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A80000001 /* Project object */;
+}

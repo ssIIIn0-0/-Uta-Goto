@@ -27,7 +27,7 @@
 
 ## 프로젝트 구조
 
-**[아키텍처 다이어그램 (인터랙티브)](docs/architecture.html)** — 브라우저에서 열어 확인
+**[아키텍처 다이어그램 (인터랙티브)](https://ssiin0-0.github.io/-Uta-Goto/architecture.html)** — 클릭하여 확인
 
 ```
 UtagoTo/

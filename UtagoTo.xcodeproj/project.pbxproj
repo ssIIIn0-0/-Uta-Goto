@@ -48,6 +48,7 @@
 		EED4B1672FA8F8CD00653A97 /* JapanesePronunciationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED4B1662FA8F8CD00653A97 /* JapanesePronunciationService.swift */; };
 		EED4B1692FA8FFE200653A97 /* JishoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED4B1682FA8FFE200653A97 /* JishoService.swift */; };
 		EED4B16B2FA905E700653A97 /* TranslationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED4B16A2FA905E700653A97 /* TranslationService.swift */; };
+		EED4B16D2FA9C43C00653A97 /* UserDictionaryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED4B16C2FA9C43C00653A97 /* UserDictionaryService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -93,6 +94,7 @@
 		EED4B1662FA8F8CD00653A97 /* JapanesePronunciationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JapanesePronunciationService.swift; sourceTree = "<group>"; };
 		EED4B1682FA8FFE200653A97 /* JishoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JishoService.swift; sourceTree = "<group>"; };
 		EED4B16A2FA905E700653A97 /* TranslationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationService.swift; sourceTree = "<group>"; };
+		EED4B16C2FA9C43C00653A97 /* UserDictionaryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDictionaryService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,6 +228,7 @@
 				EED4B1642FA8E9E100653A97 /* YouTubeService.swift */,
 				EED4B1682FA8FFE200653A97 /* JishoService.swift */,
 				EED4B16A2FA905E700653A97 /* TranslationService.swift */,
+				EED4B16C2FA9C43C00653A97 /* UserDictionaryService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -362,6 +365,7 @@
 				EED4B1672FA8F8CD00653A97 /* JapanesePronunciationService.swift in Sources */,
 				A10000014 /* PlayerView.swift in Sources */,
 				A10000015 /* LyricScrollView.swift in Sources */,
+				EED4B16D2FA9C43C00653A97 /* UserDictionaryService.swift in Sources */,
 				A10000016 /* LyricLineView.swift in Sources */,
 				A10000017 /* WordTokenView.swift in Sources */,
 				A10000018 /* VocabListView.swift in Sources */,

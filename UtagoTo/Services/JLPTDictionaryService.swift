@@ -73,6 +73,9 @@ final class JLPTDictionaryService {
     }
 
     func entry(for word: String) -> DictionaryEntry? {
-        wordToEntry[word] ?? readingToEntry[word]
+        if let userEntry = UserDictionaryService.shared.entry(for: word) {
+            return userEntry
+        }
+        return wordToEntry[word] ?? readingToEntry[word]
     }
 }

@@ -53,7 +53,9 @@ struct PlayerView: View {
                     .accessibilityLabel("표시 옵션")
                 }
             }
-            .sheet(isPresented: $playerVM.showWordDetail) {
+            .sheet(isPresented: $playerVM.showWordDetail, onDismiss: {
+                playerVM.retokenize()
+            }) {
                 if let token = playerVM.selectedWord {
                     WordDetailSheet(
                         token: token,
@@ -247,8 +249,16 @@ struct WordDetailSheet: View {
     let lineText: String
 
     @State private var justAdded = false
+    @State private var savedToDict = false
     @State private var onlineEntry: DictionaryEntry?
     @State private var isLoadingEntry = false
+    @State private var isEditing = false
+    @State private var editReading = ""
+    @State private var editMeaning = ""
+    @State private var editPos = "명사"
+    @State private var editLevel: JLPTLevel = .unknown
+
+    private static let posOptions = ["명사", "동사", "い형용사", "な형용사", "부사", "조사", "접속사", "표현", "기타"]
 
     private let pronunciation = JapanesePronunciationService.shared
 
@@ -258,6 +268,11 @@ struct WordDetailSheet: View {
 
     private var dictEntry: DictionaryEntry? {
         localEntry ?? onlineEntry
+    }
+
+    private var hasKoreanMeaning: Bool {
+        guard let entry = dictEntry else { return false }
+        return !entry.meaning.isEmpty && !entry.meaning.allSatisfy { $0.isASCII || $0.isPunctuation || $0.isWhitespace }
     }
 
     private var isSaved: Bool {
@@ -294,17 +309,67 @@ struct WordDetailSheet: View {
                 if isLoadingEntry {
                     ProgressView()
                         .font(.caption)
-                } else {
+                } else if isEditing {
+                    VStack(spacing: 8) {
+                        TextField("읽기 (히라가나)", text: $editReading)
+                            .textFieldStyle(.roundedBorder)
+                            .font(.subheadline)
+                        TextField("뜻 (한국어)", text: $editMeaning)
+                            .textFieldStyle(.roundedBorder)
+                            .font(.subheadline)
+                        HStack(spacing: 12) {
+                            Picker("품사", selection: $editPos) {
+                                ForEach(Self.posOptions, id: \.self) { pos in
+                                    Text(pos).tag(pos)
+                                }
+                            }
+                            .pickerStyle(.menu)
+
+                            Picker("JLPT", selection: $editLevel) {
+                                Text("없음").tag(JLPTLevel.unknown)
+                                Text("N5").tag(JLPTLevel.n5)
+                                Text("N4").tag(JLPTLevel.n4)
+                                Text("N3").tag(JLPTLevel.n3)
+                                Text("N2").tag(JLPTLevel.n2)
+                                Text("N1").tag(JLPTLevel.n1)
+                            }
+                            .pickerStyle(.menu)
+                        }
+                        Button("저장") {
+                            saveToUserDictionary()
+                        }
+                        .buttonStyle(.borderedProminent)
+                        .disabled(editMeaning.trimmingCharacters(in: .whitespaces).isEmpty)
+                    }
+                } else if let entry = dictEntry, !entry.meaning.isEmpty {
                     HStack(spacing: 4) {
-                        Text(dictEntry?.meaning ?? "")
-                        if let pos = dictEntry?.partOfSpeech, !pos.isEmpty {
-                            Text("·")
-                                .foregroundStyle(.secondary)
-                            Text(pos)
-                                .foregroundStyle(.secondary)
+                        Text(entry.meaning)
+                        if !entry.partOfSpeech.isEmpty {
+                            Text("·").foregroundStyle(.secondary)
+                            Text(entry.partOfSpeech).foregroundStyle(.secondary)
                         }
                     }
                     .font(.body)
+
+                    if !hasKoreanMeaning && !savedToDict {
+                        Button("한국어 뜻 추가") {
+                            editReading = entry.reading
+                            editMeaning = ""
+                            editPos = entry.partOfSpeech.isEmpty ? "명사" : entry.partOfSpeech
+                            editLevel = entry.jlptLevel
+                            isEditing = true
+                        }
+                        .font(.caption)
+                        .foregroundStyle(.blue)
+                    }
+                } else {
+                    Button("뜻 직접 입력") {
+                        editReading = token.reading
+                        editPos = "명사"
+                        editLevel = .unknown
+                        isEditing = true
+                    }
+                    .font(.subheadline)
                 }
             }
 
@@ -358,6 +423,20 @@ struct WordDetailSheet: View {
                 isLoadingEntry = false
             }
         }
+    }
+
+    private func saveToUserDictionary() {
+        let entry = DictionaryEntry(
+            word: token.surface,
+            reading: editReading.isEmpty ? token.reading : editReading,
+            meaning: editMeaning.trimmingCharacters(in: .whitespaces),
+            partOfSpeech: editPos,
+            jlptLevel: editLevel
+        )
+        UserDictionaryService.shared.addEntry(entry)
+        onlineEntry = entry
+        isEditing = false
+        savedToDict = true
     }
 }
 

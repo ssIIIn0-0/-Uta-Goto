@@ -4,7 +4,6 @@
   <img src="https://github.com/user-attachments/assets/2ae9b328-5160-478d-a930-a1e3446c9a04" width="300" alt="UtagoTo 스크린샷" />
 </p>
 
-
 일본어 노래 가사를 통해 일본어를 학습하는 iOS 앱입니다.
 
 노래를 검색하고, 동기화된 가사를 보며, 모르는 단어를 탭하면 뜻과 발음을 바로 확인할 수 있습니다.
@@ -32,7 +31,7 @@
 
 ## 프로젝트 구조
 
-**[아키텍처 다이어그램 (인터랙티브)](https://ssiin0-0.github.io/-Uta-Goto/architecture.html)** — 클릭하여 확인
+**[아키텍처 다이어그램 (인터랙티브)](https://ssiiin0-0.github.io/-Uta-Goto/architecture.html)** — 클릭하여 확인
 
 ```
 UtagoTo/

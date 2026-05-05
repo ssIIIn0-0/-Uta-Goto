@@ -133,7 +133,7 @@ struct PlayerView: View {
 
     private func youtubeMusicButton(url: URL) -> some View {
         Button {
-            UIApplication.shared.open(url)
+            openInYouTubeMusicApp(webURL: url)
         } label: {
             HStack {
                 Image(systemName: "play.rectangle.fill")
@@ -207,17 +207,6 @@ struct PlayerView: View {
     private func handleTokenTap(_ token: TokenWord, lineIndex: Int, song: Song) {
         guard token.isJapanese else { return }
         playerVM.selectWord(token)
-
-        let lineText = lineIndex < playerVM.sortedLines.count
-            ? playerVM.sortedLines[lineIndex].originalText
-            : ""
-
-        vocabVM.recordEncounter(
-            token: token,
-            in: song,
-            lineText: lineText,
-            lineIndex: lineIndex
-        )
     }
 
     private func findLineIndex(for token: TokenWord) -> Int {
@@ -234,6 +223,20 @@ struct PlayerView: View {
         guard idx < playerVM.sortedLines.count else { return "" }
         return playerVM.sortedLines[idx].originalText
     }
+
+    private func openInYouTubeMusicApp(webURL: URL) {
+        guard let videoID = URLComponents(url: webURL, resolvingAgainstBaseURL: false)?
+            .queryItems?.first(where: { $0.name == "v" })?.value,
+              let appURL = URL(string: "youtubemusic://watch?v=\(videoID)") else {
+            UIApplication.shared.open(webURL)
+            return
+        }
+        UIApplication.shared.open(appURL) { success in
+            if !success {
+                UIApplication.shared.open(webURL)
+            }
+        }
+    }
 }
 
 struct WordDetailSheet: View {
@@ -244,40 +247,65 @@ struct WordDetailSheet: View {
     let lineText: String
 
     @State private var justAdded = false
+    @State private var onlineEntry: DictionaryEntry?
+    @State private var isLoadingEntry = false
+
+    private let pronunciation = JapanesePronunciationService.shared
+
+    private var localEntry: DictionaryEntry? {
+        JLPTDictionaryService.shared.entry(for: token.surface)
+    }
 
     private var dictEntry: DictionaryEntry? {
-        JLPTDictionaryService.shared.entry(for: token.surface)
+        localEntry ?? onlineEntry
     }
 
     private var isSaved: Bool {
         vocabVM.isWordSaved(token.surface)
     }
 
+    private var hiragana: String {
+        dictEntry?.reading ?? token.reading
+    }
+
     var body: some View {
         VStack(spacing: 16) {
             HStack {
-                JLPTBadgeView(level: token.jlptLevel)
+                JLPTBadgeView(level: dictEntry?.jlptLevel ?? token.jlptLevel)
                 Spacer()
             }
 
-            VStack(spacing: 4) {
+            VStack(spacing: 6) {
                 Text(token.surface)
                     .font(.system(size: 36, weight: .bold))
 
-                Text(dictEntry?.reading ?? token.reading)
-                    .font(.system(size: 18))
-                    .foregroundStyle(.secondary)
-
-                HStack(spacing: 4) {
-                    Text(dictEntry?.meaning ?? "")
-                    if let pos = dictEntry?.partOfSpeech, !pos.isEmpty {
-                        Text("·")
-                            .foregroundStyle(.secondary)
-                        Text(pos)
-                            .foregroundStyle(.secondary)
-                    }
+                VStack(spacing: 2) {
+                    Text(hiragana)
+                        .font(.system(size: 16))
+                        .foregroundStyle(.secondary)
+                    Text(pronunciation.toKatakana(hiragana))
+                        .font(.system(size: 14))
+                        .foregroundStyle(.tertiary)
+                    Text(pronunciation.toKorean(hiragana))
+                        .font(.system(size: 14))
+                        .foregroundStyle(.orange)
                 }
-                .font(.body)
+
+                if isLoadingEntry {
+                    ProgressView()
+                        .font(.caption)
+                } else {
+                    HStack(spacing: 4) {
+                        Text(dictEntry?.meaning ?? "")
+                        if let pos = dictEntry?.partOfSpeech, !pos.isEmpty {
+                            Text("·")
+                                .foregroundStyle(.secondary)
+                            Text(pos)
+                                .foregroundStyle(.secondary)
+                        }
+                    }
+                    .font(.body)
+                }
             }
 
             if !lineText.isEmpty {
@@ -323,6 +351,13 @@ struct WordDetailSheet: View {
             }
         }
         .padding(24)
+        .task {
+            if localEntry == nil {
+                isLoadingEntry = true
+                onlineEntry = await JishoService.shared.lookup(word: token.surface)
+                isLoadingEntry = false
+            }
+        }
     }
 }
 

@@ -3,6 +3,8 @@ import SwiftUI
 struct VocabCardView: View {
     let entry: VocabEntry
 
+    private let pronunciation = JapanesePronunciationService.shared
+
     var body: some View {
         HStack(spacing: 0) {
             Rectangle()
@@ -19,6 +21,10 @@ struct VocabCardView: View {
                     Text(entry.reading)
                         .font(.subheadline)
                         .foregroundStyle(.secondary)
+
+                    Text(pronunciation.toKorean(entry.reading))
+                        .font(.caption)
+                        .foregroundStyle(.orange)
 
                     Spacer()
 

@@ -4,8 +4,6 @@ struct SettingsView: View {
     @Environment(\.dismiss) private var dismiss
     private let keyManager = APIKeyManager.shared
 
-    @State private var spotifyClientID = ""
-    @State private var spotifyClientSecret = ""
     @State private var youtubeAPIKey = ""
     @State private var showSaved = false
 
@@ -13,12 +11,17 @@ struct SettingsView: View {
         NavigationStack {
             Form {
                 Section {
-                    SecureInputField(title: "Client ID", text: $spotifyClientID, hasExisting: keyManager.get(.spotifyClientID) != nil)
-                    SecureInputField(title: "Client Secret", text: $spotifyClientSecret, hasExisting: keyManager.get(.spotifyClientSecret) != nil)
+                    HStack {
+                        Label("iTunes Search API", systemImage: "music.note")
+                        Spacer()
+                        Text("API 키 불필요")
+                            .font(.caption)
+                            .foregroundStyle(.green)
+                    }
                 } header: {
-                    Label("Spotify API", systemImage: "music.note")
+                    Text("곡 검색")
                 } footer: {
-                    Text("Spotify Developer Dashboard에서 앱을 생성하고 Client ID와 Secret을 발급받으세요.")
+                    Text("iTunes Search API를 통해 곡을 검색합니다. 별도 설정이 필요 없습니다.")
                 }
 
                 Section {
@@ -48,8 +51,6 @@ struct SettingsView: View {
                         for type in APIKeyManager.KeyType.allCases {
                             keyManager.delete(type)
                         }
-                        spotifyClientID = ""
-                        spotifyClientSecret = ""
                         youtubeAPIKey = ""
                     } label: {
                         Label("모든 API 키 삭제", systemImage: "trash")
@@ -73,11 +74,7 @@ struct SettingsView: View {
     }
 
     private func saveKeys() {
-        if !spotifyClientID.isEmpty { keyManager.save(key: spotifyClientID, for: .spotifyClientID) }
-        if !spotifyClientSecret.isEmpty { keyManager.save(key: spotifyClientSecret, for: .spotifyClientSecret) }
         if !youtubeAPIKey.isEmpty { keyManager.save(key: youtubeAPIKey, for: .youtubeAPIKey) }
-        spotifyClientID = ""
-        spotifyClientSecret = ""
         youtubeAPIKey = ""
         withAnimation { showSaved = true }
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {

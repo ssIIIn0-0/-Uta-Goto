@@ -7,14 +7,10 @@ final class APIKeyManager {
     private let serviceName = "com.utagoto.apikeys"
 
     enum KeyType: String, CaseIterable {
-        case spotifyClientID = "spotify_client_id"
-        case spotifyClientSecret = "spotify_client_secret"
         case youtubeAPIKey = "youtube_api_key"
 
         var displayName: String {
             switch self {
-            case .spotifyClientID: return "Spotify Client ID"
-            case .spotifyClientSecret: return "Spotify Client Secret"
             case .youtubeAPIKey: return "YouTube API Key"
             }
         }
@@ -54,10 +50,6 @@ final class APIKeyManager {
             kSecAttrAccount as String: type.rawValue
         ]
         SecItemDelete(query as CFDictionary)
-    }
-
-    var hasSpotifyKeys: Bool {
-        self.get(.spotifyClientID) != nil && self.get(.spotifyClientSecret) != nil
     }
 
     var hasYouTubeKey: Bool {

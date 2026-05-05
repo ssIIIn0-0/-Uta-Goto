@@ -31,6 +31,8 @@ struct WordDetailView: View {
         }
     }
 
+    private let pronunciation = JapanesePronunciationService.shared
+
     private var headerSection: some View {
         VStack(spacing: 8) {
             JLPTBadgeView(level: entry.jlptLevel)
@@ -38,9 +40,17 @@ struct WordDetailView: View {
             Text(entry.word)
                 .font(.system(size: 48, weight: .bold))
 
-            Text(entry.reading)
-                .font(.title3)
-                .foregroundStyle(.secondary)
+            VStack(spacing: 2) {
+                Text(entry.reading)
+                    .font(.title3)
+                    .foregroundStyle(.secondary)
+                Text(pronunciation.toKatakana(entry.reading))
+                    .font(.subheadline)
+                    .foregroundStyle(.tertiary)
+                Text(pronunciation.toKorean(entry.reading))
+                    .font(.subheadline)
+                    .foregroundStyle(.orange)
+            }
         }
         .frame(maxWidth: .infinity)
         .padding(.vertical, 12)

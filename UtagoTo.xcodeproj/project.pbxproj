@@ -45,6 +45,9 @@
 		EED4B1612FA8E9C700653A97 /* LRCLibService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED4B1602FA8E9C700653A97 /* LRCLibService.swift */; };
 		EED4B1632FA8E9D700653A97 /* SpotifyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED4B1622FA8E9D700653A97 /* SpotifyService.swift */; };
 		EED4B1652FA8E9E100653A97 /* YouTubeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED4B1642FA8E9E100653A97 /* YouTubeService.swift */; };
+		EED4B1672FA8F8CD00653A97 /* JapanesePronunciationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED4B1662FA8F8CD00653A97 /* JapanesePronunciationService.swift */; };
+		EED4B1692FA8FFE200653A97 /* JishoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED4B1682FA8FFE200653A97 /* JishoService.swift */; };
+		EED4B16B2FA905E700653A97 /* TranslationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED4B16A2FA905E700653A97 /* TranslationService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,6 +90,9 @@
 		EED4B1602FA8E9C700653A97 /* LRCLibService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LRCLibService.swift; sourceTree = "<group>"; };
 		EED4B1622FA8E9D700653A97 /* SpotifyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyService.swift; sourceTree = "<group>"; };
 		EED4B1642FA8E9E100653A97 /* YouTubeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeService.swift; sourceTree = "<group>"; };
+		EED4B1662FA8F8CD00653A97 /* JapanesePronunciationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JapanesePronunciationService.swift; sourceTree = "<group>"; };
+		EED4B1682FA8FFE200653A97 /* JishoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JishoService.swift; sourceTree = "<group>"; };
+		EED4B16A2FA905E700653A97 /* TranslationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +216,7 @@
 		A40000010 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				EED4B1662FA8F8CD00653A97 /* JapanesePronunciationService.swift */,
 				A20000023 /* LyricParserService.swift */,
 				A20000024 /* JLPTDictionaryService.swift */,
 				A20000025 /* AudioSyncService.swift */,
@@ -217,6 +224,8 @@
 				EED4B1602FA8E9C700653A97 /* LRCLibService.swift */,
 				EED4B1622FA8E9D700653A97 /* SpotifyService.swift */,
 				EED4B1642FA8E9E100653A97 /* YouTubeService.swift */,
+				EED4B1682FA8FFE200653A97 /* JishoService.swift */,
+				EED4B16A2FA905E700653A97 /* TranslationService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -336,6 +345,7 @@
 				EED4B1612FA8E9C700653A97 /* LRCLibService.swift in Sources */,
 				A10000001 /* UtagoToApp.swift in Sources */,
 				A10000002 /* AppContainer.swift in Sources */,
+				EED4B1692FA8FFE200653A97 /* JishoService.swift in Sources */,
 				A10000003 /* Song.swift in Sources */,
 				A10000004 /* LyricLine.swift in Sources */,
 				A10000005 /* VocabEntry.swift in Sources */,
@@ -349,6 +359,7 @@
 				A10000012 /* SongRowView.swift in Sources */,
 				EED4B1632FA8E9D700653A97 /* SpotifyService.swift in Sources */,
 				A10000013 /* AddSongView.swift in Sources */,
+				EED4B1672FA8F8CD00653A97 /* JapanesePronunciationService.swift in Sources */,
 				A10000014 /* PlayerView.swift in Sources */,
 				A10000015 /* LyricScrollView.swift in Sources */,
 				A10000016 /* LyricLineView.swift in Sources */,
@@ -357,6 +368,7 @@
 				A10000019 /* VocabCardView.swift in Sources */,
 				A10000020 /* WordDetailView.swift in Sources */,
 				A10000021 /* JLPTBadgeView.swift in Sources */,
+				EED4B16B2FA905E700653A97 /* TranslationService.swift in Sources */,
 				EED4B15A2FA8DD3400653A97 /* SongSearchView.swift in Sources */,
 				A10000022 /* EmptyStateView.swift in Sources */,
 				EED4B15F2FA8E9BF00653A97 /* APIKeyManager.swift in Sources */,
@@ -497,7 +509,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"UtagoTo/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = XYB5P74K2A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = UtagoTo/Info.plist;
@@ -533,7 +545,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"UtagoTo/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = XYB5P74K2A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = UtagoTo/Info.plist;

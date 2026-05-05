@@ -8,10 +8,12 @@ struct AddSongView: View {
     @State private var title = ""
     @State private var artist = ""
     @State private var lrcContent = ""
-    @State private var translationText = ""
+    @State private var translations: [String] = []
+    @State private var isTranslating = false
     @State private var audioURLString = ""
-    @State private var includeTranslation = true
     @State private var showValidationError = false
+
+    private let translator = TranslationService.shared
 
     var body: some View {
         NavigationStack {
@@ -41,21 +43,19 @@ struct AddSongView: View {
                 }
 
                 Section {
-                    Toggle("한국어 번역 포함", isOn: $includeTranslation)
-
-                    if includeTranslation {
-                        TextEditor(text: $translationText)
-                            .font(.system(.body, design: .monospaced))
-                            .frame(minHeight: 120)
+                    if isTranslating {
+                        HStack {
+                            ProgressView()
+                            Text("한국어 번역 중...").font(.subheadline).foregroundStyle(.secondary)
+                        }
+                    } else if !translations.isEmpty {
+                        Label("한국어 번역 완료", systemImage: "checkmark.circle.fill")
+                            .foregroundStyle(.green).font(.subheadline)
+                    } else if !lrcContent.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
+                        Button("한국어 번역하기") { translateLyrics() }
                     }
                 } header: {
                     Text("번역")
-                } footer: {
-                    if includeTranslation {
-                        Text("가사와 같은 줄 수로 입력하세요. 한 줄에 하나의 번역.")
-                            .font(.caption)
-                            .foregroundStyle(.tertiary)
-                    }
                 }
             }
             .navigationTitle("노래 추가")
@@ -77,6 +77,27 @@ struct AddSongView: View {
         }
     }
 
+    private func translateLyrics() {
+        let lines = lrcContent
+            .components(separatedBy: .newlines)
+            .map { line in
+                line.replacingOccurrences(
+                    of: "^\\[\\d{2}:\\d{2}\\.\\d{2,3}\\]",
+                    with: "",
+                    options: .regularExpression
+                ).trimmingCharacters(in: .whitespaces)
+            }
+
+        isTranslating = true
+        Task {
+            let result = await translator.translate(lines: lines)
+            await MainActor.run {
+                translations = result
+                isTranslating = false
+            }
+        }
+    }
+
     private func saveAction() {
         let trimmedTitle = title.trimmingCharacters(in: .whitespacesAndNewlines)
         let trimmedLRC = lrcContent.trimmingCharacters(in: .whitespacesAndNewlines)
@@ -84,13 +105,6 @@ struct AddSongView: View {
         guard !trimmedTitle.isEmpty, !trimmedLRC.isEmpty else {
             showValidationError = true
             return
-        }
-
-        let translations: [String]
-        if includeTranslation {
-            translations = translationText.components(separatedBy: .newlines)
-        } else {
-            translations = []
         }
 
         let audioURL = audioURLString.trimmingCharacters(in: .whitespacesAndNewlines)

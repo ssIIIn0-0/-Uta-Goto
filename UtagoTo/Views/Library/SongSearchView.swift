@@ -6,24 +6,25 @@ struct SongSearchView: View {
     var onSave: (String, String, String, [String], String?, Data?) -> Void
 
     @State private var searchQuery = ""
-    @State private var spotifyResults: [SpotifyTrack] = []
+    @State private var searchResults: [SearchTrack] = []
     @State private var isSearching = false
     @State private var searchError: String?
 
-    @State private var selectedTrack: SpotifyTrack?
+    @State private var selectedTrack: SearchTrack?
     @State private var lrcContent = ""
-    @State private var translationText = ""
-    @State private var includeTranslation = false
+    @State private var translations: [String] = []
     @State private var youtubeURL: String?
     @State private var thumbnailData: Data?
     @State private var isFetchingLyrics = false
     @State private var isFetchingYouTube = false
+    @State private var isTranslating = false
     @State private var lyricsFound = false
     @State private var showManualLRC = false
 
-    private let spotify = SpotifyService.shared
+    private let iTunes = ITunesSearchService.shared
     private let lrcLib = LRCLibService.shared
     private let youtube = YouTubeService.shared
+    private let translator = TranslationService.shared
 
     var body: some View {
         NavigationStack {
@@ -42,11 +43,12 @@ struct SongSearchView: View {
                         if selectedTrack != nil {
                             selectedTrack = nil
                             lrcContent = ""
-                            translationText = ""
+                            translations = []
                             youtubeURL = nil
                             thumbnailData = nil
                             lyricsFound = false
                             showManualLRC = false
+                            isTranslating = false
                         } else {
                             dismiss()
                         }
@@ -67,14 +69,6 @@ struct SongSearchView: View {
 
     private var searchListView: some View {
         List {
-            if !spotify.isConfigured {
-                Section {
-                    Label("Spotify API 키를 설정하면 곡 검색이 가능합니다.", systemImage: "exclamationmark.triangle")
-                        .font(.caption)
-                        .foregroundStyle(.orange)
-                }
-            }
-
             Section {
                 HStack {
                     Image(systemName: "magnifyingglass")
@@ -96,11 +90,11 @@ struct SongSearchView: View {
                         .foregroundStyle(.red)
                         .font(.caption)
                 }
-            } else if !spotifyResults.isEmpty {
+            } else if !searchResults.isEmpty {
                 Section("검색 결과") {
-                    ForEach(spotifyResults) { track in
+                    ForEach(searchResults) { track in
                         Button { selectTrack(track) } label: {
-                            SpotifyTrackRow(track: track)
+                            SearchTrackRow(track: track)
                         }
                         .tint(.primary)
                     }
@@ -112,7 +106,7 @@ struct SongSearchView: View {
 
     // MARK: - Song Detail
 
-    private func songDetailView(_ track: SpotifyTrack) -> some View {
+    private func songDetailView(_ track: SearchTrack) -> some View {
         Form {
             Section {
                 HStack(spacing: 12) {
@@ -166,19 +160,20 @@ struct SongSearchView: View {
             } header: { Text("가사 (LRC)") }
 
             Section {
-                Toggle("한국어 번역 포함", isOn: $includeTranslation)
-                if includeTranslation {
-                    TextEditor(text: $translationText)
-                        .font(.system(.body, design: .monospaced))
-                        .frame(minHeight: 100)
+                if isTranslating {
+                    HStack {
+                        ProgressView()
+                        Text("한국어 번역 중...").font(.subheadline).foregroundStyle(.secondary)
+                    }
+                } else if !translations.isEmpty {
+                    Label("한국어 번역 완료", systemImage: "checkmark.circle.fill")
+                        .foregroundStyle(.green).font(.subheadline)
+                } else if lyricsFound || !lrcContent.isEmpty {
+                    Button("한국어 번역하기") { translateLyrics() }
                 }
-            } header: { Text("번역") } footer: {
-                if includeTranslation {
-                    Text("가사와 같은 줄 수로 입력하세요.").font(.caption).foregroundStyle(.tertiary)
-                }
-            }
+            } header: { Text("번역") }
 
-            if let ytURL = youtubeURL {
+            if youtubeURL != nil {
                 Section("YouTube Music") {
                     HStack {
                         Image(systemName: "play.rectangle.fill").foregroundStyle(.red)
@@ -205,24 +200,24 @@ struct SongSearchView: View {
         guard !query.isEmpty else { return }
         isSearching = true
         searchError = nil
-        spotifyResults = []
+        searchResults = []
 
         Task {
             do {
-                let results = try await spotify.search(query: query)
-                await MainActor.run { spotifyResults = results; isSearching = false }
+                let results = try await iTunes.search(query: query)
+                await MainActor.run { searchResults = results; isSearching = false }
             } catch {
                 await MainActor.run { searchError = error.localizedDescription; isSearching = false }
             }
         }
     }
 
-    private func selectTrack(_ track: SpotifyTrack) {
+    private func selectTrack(_ track: SearchTrack) {
         selectedTrack = track
 
         if let imageURL = track.imageURL {
             Task {
-                if let data = try? await spotify.downloadImage(url: imageURL) {
+                if let data = try? await iTunes.downloadImage(url: imageURL) {
                     await MainActor.run { thumbnailData = data }
                 }
             }
@@ -237,6 +232,7 @@ struct SongSearchView: View {
                     if let lyrics = synced?.syncedLyrics {
                         lrcContent = lyrics
                         lyricsFound = true
+                        translateLyrics()
                     }
                     isFetchingLyrics = false
                 }
@@ -251,7 +247,7 @@ struct SongSearchView: View {
                 do {
                     let results = try await youtube.search(query: "\(track.name) \(track.artist)")
                     await MainActor.run {
-                        youtubeURL = results.first?.youtubeMusicURL?.absoluteString
+                        youtubeURL = results.first?.youtubeMusicWebURL?.absoluteString
                         isFetchingYouTube = false
                     }
                 } catch {
@@ -261,24 +257,41 @@ struct SongSearchView: View {
         }
     }
 
+    private func translateLyrics() {
+        let lines = lrcContent
+            .components(separatedBy: .newlines)
+            .map { line in
+                line.replacingOccurrences(
+                    of: "^\\[\\d{2}:\\d{2}\\.\\d{2,3}\\]",
+                    with: "",
+                    options: .regularExpression
+                ).trimmingCharacters(in: .whitespaces)
+            }
+
+        isTranslating = true
+        Task {
+            let result = await translator.translate(lines: lines)
+            await MainActor.run {
+                translations = result
+                isTranslating = false
+            }
+        }
+    }
+
     private func saveAction() {
         guard let track = selectedTrack else { return }
         let trimmedLRC = lrcContent.trimmingCharacters(in: .whitespacesAndNewlines)
         guard !trimmedLRC.isEmpty else { return }
-
-        let translations: [String] = includeTranslation
-            ? translationText.components(separatedBy: .newlines)
-            : []
 
         onSave(track.name, track.artist, trimmedLRC, translations, youtubeURL, thumbnailData)
         dismiss()
     }
 }
 
-// MARK: - Spotify Track Row
+// MARK: - Search Track Row
 
-struct SpotifyTrackRow: View {
-    let track: SpotifyTrack
+struct SearchTrackRow: View {
+    let track: SearchTrack
 
     var body: some View {
         HStack(spacing: 12) {

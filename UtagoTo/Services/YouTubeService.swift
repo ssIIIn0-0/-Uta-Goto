@@ -5,7 +5,11 @@ struct YouTubeVideo: Identifiable {
     let title: String
     let channelTitle: String
 
-    var youtubeMusicURL: URL? {
+    var youtubeMusicAppURL: URL? {
+        URL(string: "youtubemusic://watch?v=\(id)")
+    }
+
+    var youtubeMusicWebURL: URL? {
         URL(string: "https://music.youtube.com/watch?v=\(id)")
     }
 }

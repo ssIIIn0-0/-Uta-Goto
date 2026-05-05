@@ -20,6 +20,7 @@ struct SongSearchView: View {
     @State private var isTranslating = false
     @State private var lyricsFound = false
     @State private var showManualLRC = false
+    @State private var translationError: String?
 
     private let iTunes = ITunesSearchService.shared
     private let lrcLib = LRCLibService.shared
@@ -49,6 +50,7 @@ struct SongSearchView: View {
                             lyricsFound = false
                             showManualLRC = false
                             isTranslating = false
+                            translationError = nil
                         } else {
                             dismiss()
                         }
@@ -165,11 +167,15 @@ struct SongSearchView: View {
                         ProgressView()
                         Text("한국어 번역 중...").font(.subheadline).foregroundStyle(.secondary)
                     }
-                } else if !translations.isEmpty {
+                } else if translations.contains(where: { !$0.isEmpty }) {
                     Label("한국어 번역 완료", systemImage: "checkmark.circle.fill")
                         .foregroundStyle(.green).font(.subheadline)
                 } else if lyricsFound || !lrcContent.isEmpty {
                     Button("한국어 번역하기") { translateLyrics() }
+                    if translationError != nil {
+                        Label("번역 실패 — 다시 시도해주세요", systemImage: "exclamationmark.triangle")
+                            .foregroundStyle(.orange).font(.caption)
+                    }
                 }
             } header: { Text("번역") }
 
@@ -269,11 +275,16 @@ struct SongSearchView: View {
             }
 
         isTranslating = true
+        translationError = nil
         Task {
             let result = await translator.translate(lines: lines)
             await MainActor.run {
                 translations = result
                 isTranslating = false
+                if !result.contains(where: { !$0.isEmpty }) {
+                    translationError = "번역 실패"
+                    translations = []
+                }
             }
         }
     }

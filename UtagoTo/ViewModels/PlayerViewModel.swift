@@ -13,6 +13,7 @@ final class PlayerViewModel {
 
     let audioService = AudioSyncService()
     private let parser = LyricParserService.shared
+    private let translator = TranslationService.shared
     private var cancellables = Set<AnyCancellable>()
 
     init() {}
@@ -24,11 +25,37 @@ final class PlayerViewModel {
 
         song.totalPlayCount += 1
         song.lastPlayedAt = Date()
+
+        let lines = song.sortedLyricLines
+        let needsTranslation = lines.allSatisfy { ($0.translationText ?? "").isEmpty }
+        if needsTranslation && !lines.isEmpty {
+            fetchTranslations(for: song)
+        }
+    }
+
+    private func fetchTranslations(for song: Song) {
+        let lines = song.sortedLyricLines
+        let texts = lines.map { $0.originalText }
+        Task {
+            let translations = await translator.translate(lines: texts)
+            await MainActor.run {
+                for (index, line) in lines.enumerated() {
+                    if index < translations.count && !translations[index].isEmpty {
+                        line.translationText = translations[index]
+                    }
+                }
+            }
+        }
     }
 
     func selectWord(_ token: TokenWord) {
         selectedWord = token
         showWordDetail = true
+    }
+
+    func retokenize() {
+        guard let song = currentSong else { return }
+        tokenizedLines = song.sortedLyricLines.map { parser.tokenize(line: $0.originalText) }
     }
 
     var hasTimestamps: Bool {

@@ -1,49 +1,58 @@
 import Foundation
 
+struct LyricTranslation: Codable {
+    let original: String
+    let literal: String
+    let natural: String
+}
+
 final class TranslationService {
     static let shared = TranslationService()
 
-    func translate(lines: [String]) async -> [String] {
-        await withTaskGroup(of: (Int, String).self) { group in
-            for (index, line) in lines.enumerated() {
-                let trimmed = line.trimmingCharacters(in: .whitespacesAndNewlines)
-                guard !trimmed.isEmpty else {
-                    group.addTask { (index, "") }
-                    continue
-                }
-                group.addTask {
-                    let result = await self.translateLine(trimmed)
-                    return (index, result)
-                }
-            }
+    #if targetEnvironment(simulator)
+    private let baseURL = "http://localhost:3000"
+    #else
+    private let baseURL = "http://192.168.0.43:3000"
+    #endif
 
-            var results = Array(repeating: "", count: lines.count)
-            for await (index, translation) in group {
-                results[index] = translation
-            }
-            return results
-        }
+    func translate(lines: [String]) async -> [String] {
+        let result = await translateFull(lines: lines)
+        return result.map { $0.natural }
     }
 
-    private func translateLine(_ text: String) async -> String {
-        var components = URLComponents(string: "https://api.mymemory.translated.net/get")!
-        components.queryItems = [
-            URLQueryItem(name: "q", value: text),
-            URLQueryItem(name: "langpair", value: "ja|ko")
-        ]
-        guard let url = components.url else { return "" }
+    func translateFull(lines: [String]) async -> [LyricTranslation] {
+        let url = URL(string: "\(baseURL)/translate/lyrics")!
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+
+        let body: [String: Any] = ["lyrics": lines]
+        request.httpBody = try? JSONSerialization.data(withJSONObject: body)
+
+        print("[TranslationService] POST \(url)")
+        print("[TranslationService] lines count: \(lines.count)")
 
         do {
-            let (data, _) = try await URLSession.shared.data(from: url)
-            guard let json = try? JSONSerialization.jsonObject(with: data) as? [String: Any],
-                  let responseData = json["responseData"] as? [String: Any],
-                  let translated = responseData["translatedText"] as? String else {
-                return ""
+            let (data, response) = try await URLSession.shared.data(for: request)
+            let httpResponse = response as? HTTPURLResponse
+            print("[TranslationService] HTTP \(httpResponse?.statusCode ?? -1)")
+
+            guard let code = httpResponse?.statusCode, (200...299).contains(code) else {
+                let bodyStr = String(data: data, encoding: .utf8) ?? ""
+                print("[TranslationService] Error body: \(bodyStr)")
+                return lines.map { LyricTranslation(original: $0, literal: "", natural: "") }
             }
-            if translated.contains("%") { return "" }
-            return translated
+
+            let decoded = try JSONDecoder().decode(TranslationResponse.self, from: data)
+            print("[TranslationService] Success: \(decoded.translations.count) translations")
+            return decoded.translations
         } catch {
-            return ""
+            print("[TranslationService] Exception: \(error)")
+            return lines.map { LyricTranslation(original: $0, literal: "", natural: "") }
         }
     }
+}
+
+private struct TranslationResponse: Codable {
+    let translations: [LyricTranslation]
 }

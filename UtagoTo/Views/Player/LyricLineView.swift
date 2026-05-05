@@ -8,7 +8,7 @@ struct LyricLineView: View {
     var onTokenTap: ((TokenWord) -> Void)?
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 4) {
+        VStack(spacing: 4) {
             WrappingHStack(tokens: tokens, isActive: isActive, onTokenTap: onTokenTap)
 
             if showTranslation, let translation, !translation.isEmpty {
@@ -16,6 +16,8 @@ struct LyricLineView: View {
                     .font(.system(size: 14))
                     .italic()
                     .foregroundStyle(.secondary)
+                    .multilineTextAlignment(.center)
+                    .frame(maxWidth: .infinity)
             }
         }
         .padding(.horizontal, 16)

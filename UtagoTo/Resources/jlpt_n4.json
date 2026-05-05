@@ -1,442 +1,4412 @@
 [
-  {"word": "届ける", "reading": "とどける", "meaning": "전달하다, 배달하다", "pos": "동사"},
-  {"word": "集める", "reading": "あつめる", "meaning": "모으다", "pos": "동사"},
-  {"word": "集まる", "reading": "あつまる", "meaning": "모이다", "pos": "동사"},
-  {"word": "上がる", "reading": "あがる", "meaning": "오르다, 올라가다", "pos": "동사"},
-  {"word": "上げる", "reading": "あげる", "meaning": "올리다", "pos": "동사"},
-  {"word": "合う", "reading": "あう", "meaning": "맞다, 어울리다", "pos": "동사"},
-  {"word": "表す", "reading": "あらわす", "meaning": "나타내다, 표현하다", "pos": "동사"},
-  {"word": "生きる", "reading": "いきる", "meaning": "살다", "pos": "동사"},
-  {"word": "急ぐ", "reading": "いそぐ", "meaning": "서두르다", "pos": "동사"},
-  {"word": "祈る", "reading": "いのる", "meaning": "기도하다", "pos": "동사"},
-  {"word": "動く", "reading": "うごく", "meaning": "움직이다", "pos": "동사"},
-  {"word": "動かす", "reading": "うごかす", "meaning": "움직이게 하다", "pos": "동사"},
-  {"word": "受ける", "reading": "うける", "meaning": "받다, 수험하다", "pos": "동사"},
-  {"word": "失う", "reading": "うしなう", "meaning": "잃다", "pos": "동사"},
-  {"word": "生まれる", "reading": "うまれる", "meaning": "태어나다", "pos": "동사"},
-  {"word": "選ぶ", "reading": "えらぶ", "meaning": "선택하다, 고르다", "pos": "동사"},
-  {"word": "起こす", "reading": "おこす", "meaning": "일으키다, 깨우다", "pos": "동사"},
-  {"word": "起こる", "reading": "おこる", "meaning": "일어나다, 발생하다", "pos": "동사"},
-  {"word": "落とす", "reading": "おとす", "meaning": "떨어뜨리다", "pos": "동사"},
-  {"word": "落ちる", "reading": "おちる", "meaning": "떨어지다", "pos": "동사"},
-  {"word": "思い出す", "reading": "おもいだす", "meaning": "생각해내다, 기억하다", "pos": "동사"},
-  {"word": "折る", "reading": "おる", "meaning": "접다, 꺾다", "pos": "동사"},
-  {"word": "折れる", "reading": "おれる", "meaning": "부러지다, 접히다", "pos": "동사"},
-  {"word": "変える", "reading": "かえる", "meaning": "바꾸다", "pos": "동사"},
-  {"word": "変わる", "reading": "かわる", "meaning": "바뀌다, 변하다", "pos": "동사"},
-  {"word": "飾る", "reading": "かざる", "meaning": "장식하다", "pos": "동사"},
-  {"word": "借りる", "reading": "かりる", "meaning": "빌리다", "pos": "동사"},
-  {"word": "貸す", "reading": "かす", "meaning": "빌려주다", "pos": "동사"},
-  {"word": "数える", "reading": "かぞえる", "meaning": "세다", "pos": "동사"},
-  {"word": "考える", "reading": "かんがえる", "meaning": "생각하다", "pos": "동사"},
-  {"word": "決める", "reading": "きめる", "meaning": "결정하다", "pos": "동사"},
-  {"word": "決まる", "reading": "きまる", "meaning": "결정되다", "pos": "동사"},
-  {"word": "気がつく", "reading": "きがつく", "meaning": "알아차리다, 깨닫다", "pos": "동사"},
-  {"word": "比べる", "reading": "くらべる", "meaning": "비교하다", "pos": "동사"},
-  {"word": "繰り返す", "reading": "くりかえす", "meaning": "반복하다", "pos": "동사"},
-  {"word": "壊す", "reading": "こわす", "meaning": "부수다", "pos": "동사"},
-  {"word": "壊れる", "reading": "こわれる", "meaning": "부서지다", "pos": "동사"},
-  {"word": "込む", "reading": "こむ", "meaning": "붐비다, 혼잡하다", "pos": "동사"},
-  {"word": "探す", "reading": "さがす", "meaning": "찾다", "pos": "동사"},
-  {"word": "触る", "reading": "さわる", "meaning": "만지다, 닿다", "pos": "동사"},
-  {"word": "知らせる", "reading": "しらせる", "meaning": "알리다", "pos": "동사"},
-  {"word": "調べる", "reading": "しらべる", "meaning": "조사하다", "pos": "동사"},
-  {"word": "信じる", "reading": "しんじる", "meaning": "믿다", "pos": "동사"},
-  {"word": "捨てる", "reading": "すてる", "meaning": "버리다", "pos": "동사"},
-  {"word": "続く", "reading": "つづく", "meaning": "계속되다", "pos": "동사"},
-  {"word": "続ける", "reading": "つづける", "meaning": "계속하다", "pos": "동사"},
-  {"word": "伝える", "reading": "つたえる", "meaning": "전하다", "pos": "동사"},
-  {"word": "連れる", "reading": "つれる", "meaning": "데리고 가다", "pos": "동사"},
-  {"word": "倒れる", "reading": "たおれる", "meaning": "쓰러지다", "pos": "동사"},
-  {"word": "倒す", "reading": "たおす", "meaning": "쓰러뜨리다", "pos": "동사"},
-  {"word": "頼む", "reading": "たのむ", "meaning": "부탁하다", "pos": "동사"},
-  {"word": "直す", "reading": "なおす", "meaning": "고치다", "pos": "동사"},
-  {"word": "直る", "reading": "なおる", "meaning": "고쳐지다, 나아지다", "pos": "동사"},
-  {"word": "泣く", "reading": "なく", "meaning": "울다", "pos": "동사"},
-  {"word": "並ぶ", "reading": "ならぶ", "meaning": "줄을 서다, 나란히 서다", "pos": "동사"},
-  {"word": "並べる", "reading": "ならべる", "meaning": "늘어놓다", "pos": "동사"},
-  {"word": "慣れる", "reading": "なれる", "meaning": "익숙해지다", "pos": "동사"},
-  {"word": "残る", "reading": "のこる", "meaning": "남다", "pos": "동사"},
-  {"word": "残す", "reading": "のこす", "meaning": "남기다", "pos": "동사"},
-  {"word": "乗り換える", "reading": "のりかえる", "meaning": "환승하다, 갈아타다", "pos": "동사"},
-  {"word": "運ぶ", "reading": "はこぶ", "meaning": "운반하다", "pos": "동사"},
-  {"word": "払う", "reading": "はらう", "meaning": "지불하다", "pos": "동사"},
-  {"word": "引っ越す", "reading": "ひっこす", "meaning": "이사하다", "pos": "동사"},
-  {"word": "拾う", "reading": "ひろう", "meaning": "줍다", "pos": "동사"},
-  {"word": "増える", "reading": "ふえる", "meaning": "늘다, 증가하다", "pos": "동사"},
-  {"word": "増やす", "reading": "ふやす", "meaning": "늘리다", "pos": "동사"},
-  {"word": "踏む", "reading": "ふむ", "meaning": "밟다", "pos": "동사"},
-  {"word": "曲がる", "reading": "まがる", "meaning": "굽다, 구부러지다", "pos": "동사"},
-  {"word": "間違える", "reading": "まちがえる", "meaning": "틀리다, 착각하다", "pos": "동사"},
-  {"word": "見つかる", "reading": "みつかる", "meaning": "발견되다", "pos": "동사"},
-  {"word": "見つける", "reading": "みつける", "meaning": "찾아내다, 발견하다", "pos": "동사"},
-  {"word": "迎える", "reading": "むかえる", "meaning": "맞이하다", "pos": "동사"},
-  {"word": "戻る", "reading": "もどる", "meaning": "돌아가다, 되돌아오다", "pos": "동사"},
-  {"word": "戻す", "reading": "もどす", "meaning": "돌려놓다", "pos": "동사"},
-  {"word": "呼ぶ", "reading": "よぶ", "meaning": "부르다", "pos": "동사"},
-  {"word": "喜ぶ", "reading": "よろこぶ", "meaning": "기뻐하다", "pos": "동사"},
-  {"word": "別れる", "reading": "わかれる", "meaning": "헤어지다", "pos": "동사"},
-  {"word": "渡る", "reading": "わたる", "meaning": "건너다", "pos": "동사"},
-  {"word": "渡す", "reading": "わたす", "meaning": "건네다", "pos": "동사"},
-  {"word": "笑う", "reading": "わらう", "meaning": "웃다", "pos": "동사"},
-  {"word": "怒る", "reading": "おこる", "meaning": "화내다", "pos": "동사"},
-  {"word": "驚く", "reading": "おどろく", "meaning": "놀라다", "pos": "동사"},
-  {"word": "押す", "reading": "おす", "meaning": "밀다, 누르다", "pos": "동사"},
-  {"word": "引く", "reading": "ひく", "meaning": "당기다, (감기에) 걸리다", "pos": "동사"},
-  {"word": "安い", "reading": "やすい", "meaning": "싸다", "pos": "형용사"},
-  {"word": "危ない", "reading": "あぶない", "meaning": "위험하다", "pos": "형용사"},
-  {"word": "暖かい", "reading": "あたたかい", "meaning": "따뜻하다", "pos": "형용사"},
-  {"word": "甘い", "reading": "あまい", "meaning": "달다", "pos": "형용사"},
-  {"word": "痛い", "reading": "いたい", "meaning": "아프다", "pos": "형용사"},
-  {"word": "薄い", "reading": "うすい", "meaning": "얇다, 연하다", "pos": "형용사"},
-  {"word": "嬉しい", "reading": "うれしい", "meaning": "기쁘다", "pos": "형용사"},
-  {"word": "大きい", "reading": "おおきい", "meaning": "크다", "pos": "형용사"},
-  {"word": "多い", "reading": "おおい", "meaning": "많다", "pos": "형용사"},
-  {"word": "遅い", "reading": "おそい", "meaning": "느리다, 늦다", "pos": "형용사"},
-  {"word": "重い", "reading": "おもい", "meaning": "무겁다", "pos": "형용사"},
-  {"word": "面白い", "reading": "おもしろい", "meaning": "재미있다", "pos": "형용사"},
-  {"word": "固い", "reading": "かたい", "meaning": "딱딱하다, 굳다", "pos": "형용사"},
-  {"word": "悲しい", "reading": "かなしい", "meaning": "슬프다", "pos": "형용사"},
-  {"word": "辛い", "reading": "からい", "meaning": "맵다", "pos": "형용사"},
-  {"word": "かわいい", "reading": "かわいい", "meaning": "귀엽다", "pos": "형용사"},
-  {"word": "暗い", "reading": "くらい", "meaning": "어둡다", "pos": "형용사"},
-  {"word": "苦しい", "reading": "くるしい", "meaning": "괴롭다, 힘들다", "pos": "형용사"},
-  {"word": "怖い", "reading": "こわい", "meaning": "무섭다", "pos": "형용사"},
-  {"word": "寂しい", "reading": "さびしい", "meaning": "쓸쓸하다, 외롭다", "pos": "형용사"},
-  {"word": "涼しい", "reading": "すずしい", "meaning": "시원하다", "pos": "형용사"},
-  {"word": "少ない", "reading": "すくない", "meaning": "적다", "pos": "형용사"},
-  {"word": "正しい", "reading": "ただしい", "meaning": "올바르다", "pos": "형용사"},
-  {"word": "楽しい", "reading": "たのしい", "meaning": "즐겁다", "pos": "형용사"},
-  {"word": "近い", "reading": "ちかい", "meaning": "가깝다", "pos": "형용사"},
-  {"word": "冷たい", "reading": "つめたい", "meaning": "차갑다", "pos": "형용사"},
-  {"word": "強い", "reading": "つよい", "meaning": "강하다", "pos": "형용사"},
-  {"word": "遠い", "reading": "とおい", "meaning": "멀다", "pos": "형용사"},
-  {"word": "長い", "reading": "ながい", "meaning": "길다", "pos": "형용사"},
-  {"word": "難しい", "reading": "むずかしい", "meaning": "어렵다", "pos": "형용사"},
-  {"word": "珍しい", "reading": "めずらしい", "meaning": "드물다, 희귀하다", "pos": "형용사"},
-  {"word": "優しい", "reading": "やさしい", "meaning": "다정하다, 친절하다", "pos": "형용사"},
-  {"word": "弱い", "reading": "よわい", "meaning": "약하다", "pos": "형용사"},
-  {"word": "若い", "reading": "わかい", "meaning": "젊다", "pos": "형용사"},
-  {"word": "親切な", "reading": "しんせつな", "meaning": "친절한", "pos": "な형용사"},
-  {"word": "丁寧な", "reading": "ていねいな", "meaning": "정중한, 꼼꼼한", "pos": "な형용사"},
-  {"word": "大切な", "reading": "たいせつな", "meaning": "소중한", "pos": "な형용사"},
-  {"word": "大事な", "reading": "だいじな", "meaning": "중요한, 소중한", "pos": "な형용사"},
-  {"word": "便利な", "reading": "べんりな", "meaning": "편리한", "pos": "な형용사"},
-  {"word": "不便な", "reading": "ふべんな", "meaning": "불편한", "pos": "な형용사"},
-  {"word": "安全な", "reading": "あんぜんな", "meaning": "안전한", "pos": "な형용사"},
-  {"word": "危険な", "reading": "きけんな", "meaning": "위험한", "pos": "な형용사"},
-  {"word": "元気な", "reading": "げんきな", "meaning": "건강한, 활기찬", "pos": "な형용사"},
-  {"word": "無理な", "reading": "むりな", "meaning": "무리한, 불가능한", "pos": "な형용사"},
-  {"word": "特別な", "reading": "とくべつな", "meaning": "특별한", "pos": "な형용사"},
-  {"word": "普通な", "reading": "ふつうな", "meaning": "보통인, 평범한", "pos": "な형용사"},
-  {"word": "複雑な", "reading": "ふくざつな", "meaning": "복잡한", "pos": "な형용사"},
-  {"word": "簡単な", "reading": "かんたんな", "meaning": "간단한, 쉬운", "pos": "な형용사"},
-  {"word": "自由な", "reading": "じゆうな", "meaning": "자유로운", "pos": "な형용사"},
-  {"word": "必要な", "reading": "ひつような", "meaning": "필요한", "pos": "な형용사"},
-  {"word": "大変な", "reading": "たいへんな", "meaning": "힘든, 큰일인", "pos": "な형용사"},
-  {"word": "残念な", "reading": "ざんねんな", "meaning": "유감스러운, 아쉬운", "pos": "な형용사"},
-  {"word": "真剣な", "reading": "しんけんな", "meaning": "진지한", "pos": "な형용사"},
-  {"word": "正直な", "reading": "しょうじきな", "meaning": "솔직한", "pos": "な형용사"},
-  {"word": "事故", "reading": "じこ", "meaning": "사고", "pos": "명사"},
-  {"word": "意味", "reading": "いみ", "meaning": "의미", "pos": "명사"},
-  {"word": "以上", "reading": "いじょう", "meaning": "이상", "pos": "명사"},
-  {"word": "以下", "reading": "いか", "meaning": "이하", "pos": "명사"},
-  {"word": "運動", "reading": "うんどう", "meaning": "운동", "pos": "명사"},
-  {"word": "映画", "reading": "えいが", "meaning": "영화", "pos": "명사"},
-  {"word": "音楽", "reading": "おんがく", "meaning": "음악", "pos": "명사"},
-  {"word": "会議", "reading": "かいぎ", "meaning": "회의", "pos": "명사"},
-  {"word": "会話", "reading": "かいわ", "meaning": "대화, 회화", "pos": "명사"},
-  {"word": "科学", "reading": "かがく", "meaning": "과학", "pos": "명사"},
-  {"word": "家具", "reading": "かぐ", "meaning": "가구", "pos": "명사"},
-  {"word": "環境", "reading": "かんきょう", "meaning": "환경", "pos": "명사"},
-  {"word": "機会", "reading": "きかい", "meaning": "기회", "pos": "명사"},
-  {"word": "記念", "reading": "きねん", "meaning": "기념", "pos": "명사"},
-  {"word": "規則", "reading": "きそく", "meaning": "규칙", "pos": "명사"},
-  {"word": "気持ち", "reading": "きもち", "meaning": "기분, 감정", "pos": "명사"},
-  {"word": "経験", "reading": "けいけん", "meaning": "경험", "pos": "명사"},
-  {"word": "景色", "reading": "けしき", "meaning": "경치, 풍경", "pos": "명사"},
-  {"word": "結婚", "reading": "けっこん", "meaning": "결혼", "pos": "명사"},
-  {"word": "研究", "reading": "けんきゅう", "meaning": "연구", "pos": "명사"},
-  {"word": "工場", "reading": "こうじょう", "meaning": "공장", "pos": "명사"},
-  {"word": "交通", "reading": "こうつう", "meaning": "교통", "pos": "명사"},
-  {"word": "国際", "reading": "こくさい", "meaning": "국제", "pos": "명사"},
-  {"word": "今後", "reading": "こんご", "meaning": "앞으로, 금후", "pos": "명사"},
-  {"word": "最近", "reading": "さいきん", "meaning": "최근", "pos": "명사"},
-  {"word": "産業", "reading": "さんぎょう", "meaning": "산업", "pos": "명사"},
-  {"word": "事件", "reading": "じけん", "meaning": "사건", "pos": "명사"},
-  {"word": "試験", "reading": "しけん", "meaning": "시험", "pos": "명사"},
-  {"word": "自然", "reading": "しぜん", "meaning": "자연", "pos": "명사"},
-  {"word": "質問", "reading": "しつもん", "meaning": "질문", "pos": "명사"},
-  {"word": "社会", "reading": "しゃかい", "meaning": "사회", "pos": "명사"},
-  {"word": "準備", "reading": "じゅんび", "meaning": "준비", "pos": "명사"},
-  {"word": "将来", "reading": "しょうらい", "meaning": "장래, 미래", "pos": "명사"},
-  {"word": "食事", "reading": "しょくじ", "meaning": "식사", "pos": "명사"},
-  {"word": "生活", "reading": "せいかつ", "meaning": "생활", "pos": "명사"},
-  {"word": "説明", "reading": "せつめい", "meaning": "설명", "pos": "명사"},
-  {"word": "先輩", "reading": "せんぱい", "meaning": "선배", "pos": "명사"},
-  {"word": "後輩", "reading": "こうはい", "meaning": "후배", "pos": "명사"},
-  {"word": "相談", "reading": "そうだん", "meaning": "상담, 의논", "pos": "명사"},
-  {"word": "卒業", "reading": "そつぎょう", "meaning": "졸업", "pos": "명사"},
-  {"word": "体験", "reading": "たいけん", "meaning": "체험", "pos": "명사"},
-  {"word": "単語", "reading": "たんご", "meaning": "단어", "pos": "명사"},
-  {"word": "地震", "reading": "じしん", "meaning": "지진", "pos": "명사"},
-  {"word": "注意", "reading": "ちゅうい", "meaning": "주의", "pos": "명사"},
-  {"word": "通訳", "reading": "つうやく", "meaning": "통역", "pos": "명사"},
-  {"word": "電車", "reading": "でんしゃ", "meaning": "전철", "pos": "명사"},
-  {"word": "努力", "reading": "どりょく", "meaning": "노력", "pos": "명사"},
-  {"word": "内容", "reading": "ないよう", "meaning": "내용", "pos": "명사"},
-  {"word": "日記", "reading": "にっき", "meaning": "일기", "pos": "명사"},
-  {"word": "人気", "reading": "にんき", "meaning": "인기", "pos": "명사"},
-  {"word": "熱", "reading": "ねつ", "meaning": "열, 열기", "pos": "명사"},
-  {"word": "場所", "reading": "ばしょ", "meaning": "장소", "pos": "명사"},
-  {"word": "発表", "reading": "はっぴょう", "meaning": "발표", "pos": "명사"},
-  {"word": "番号", "reading": "ばんごう", "meaning": "번호", "pos": "명사"},
-  {"word": "秘密", "reading": "ひみつ", "meaning": "비밀", "pos": "명사"},
-  {"word": "病気", "reading": "びょうき", "meaning": "병, 질병", "pos": "명사"},
-  {"word": "文化", "reading": "ぶんか", "meaning": "문화", "pos": "명사"},
-  {"word": "文法", "reading": "ぶんぽう", "meaning": "문법", "pos": "명사"},
-  {"word": "方法", "reading": "ほうほう", "meaning": "방법", "pos": "명사"},
-  {"word": "翻訳", "reading": "ほんやく", "meaning": "번역", "pos": "명사"},
-  {"word": "町", "reading": "まち", "meaning": "마을, 도시", "pos": "명사"},
-  {"word": "約束", "reading": "やくそく", "meaning": "약속", "pos": "명사"},
-  {"word": "理由", "reading": "りゆう", "meaning": "이유", "pos": "명사"},
-  {"word": "旅行", "reading": "りょこう", "meaning": "여행", "pos": "명사"},
-  {"word": "連絡", "reading": "れんらく", "meaning": "연락", "pos": "명사"},
-  {"word": "かなり", "reading": "かなり", "meaning": "꽤, 상당히", "pos": "부사"},
-  {"word": "きっと", "reading": "きっと", "meaning": "반드시, 틀림없이", "pos": "부사"},
-  {"word": "ぜひ", "reading": "ぜひ", "meaning": "꼭, 반드시", "pos": "부사"},
-  {"word": "だいたい", "reading": "だいたい", "meaning": "대략, 대체로", "pos": "부사"},
-  {"word": "たいてい", "reading": "たいてい", "meaning": "대개, 보통", "pos": "부사"},
-  {"word": "だいぶ", "reading": "だいぶ", "meaning": "꽤, 상당히", "pos": "부사"},
-  {"word": "たとえば", "reading": "たとえば", "meaning": "예를 들면", "pos": "부사"},
-  {"word": "ちゃんと", "reading": "ちゃんと", "meaning": "제대로, 확실히", "pos": "부사"},
-  {"word": "ちょうど", "reading": "ちょうど", "meaning": "딱, 정확히", "pos": "부사"},
-  {"word": "できるだけ", "reading": "できるだけ", "meaning": "가능한 한", "pos": "부사"},
-  {"word": "どうせ", "reading": "どうせ", "meaning": "어차피", "pos": "부사"},
-  {"word": "どうぞ", "reading": "どうぞ", "meaning": "부디, 아무쪼록", "pos": "부사"},
-  {"word": "どうも", "reading": "どうも", "meaning": "아무래도, 정말로", "pos": "부사"},
-  {"word": "なかなか", "reading": "なかなか", "meaning": "꽤, 좀처럼 (~ない)", "pos": "부사"},
-  {"word": "なるべく", "reading": "なるべく", "meaning": "될 수 있으면", "pos": "부사"},
-  {"word": "はっきり", "reading": "はっきり", "meaning": "확실히, 분명히", "pos": "부사"},
-  {"word": "まず", "reading": "まず", "meaning": "우선, 먼저", "pos": "부사"},
-  {"word": "まだ", "reading": "まだ", "meaning": "아직", "pos": "부사"},
-  {"word": "また", "reading": "また", "meaning": "또, 다시", "pos": "부사"},
-  {"word": "もう", "reading": "もう", "meaning": "이미, 벌써", "pos": "부사"},
-  {"word": "もうすぐ", "reading": "もうすぐ", "meaning": "곧, 얼마 후", "pos": "부사"},
-  {"word": "もちろん", "reading": "もちろん", "meaning": "물론", "pos": "부사"},
-  {"word": "もっと", "reading": "もっと", "meaning": "더, 더욱", "pos": "부사"},
-  {"word": "ゆっくり", "reading": "ゆっくり", "meaning": "천천히", "pos": "부사"},
-  {"word": "よく", "reading": "よく", "meaning": "자주, 잘", "pos": "부사"},
-  {"word": "やっと", "reading": "やっと", "meaning": "겨우, 드디어", "pos": "부사"},
-  {"word": "やはり", "reading": "やはり", "meaning": "역시", "pos": "부사"},
-  {"word": "それで", "reading": "それで", "meaning": "그래서", "pos": "접속사"},
-  {"word": "それから", "reading": "それから", "meaning": "그리고, 그 후에", "pos": "접속사"},
-  {"word": "それに", "reading": "それに", "meaning": "게다가, 더구나", "pos": "접속사"},
-  {"word": "しかし", "reading": "しかし", "meaning": "그러나, 하지만", "pos": "접속사"},
-  {"word": "でも", "reading": "でも", "meaning": "그래도, 하지만", "pos": "접속사"},
-  {"word": "だから", "reading": "だから", "meaning": "그래서, 그러므로", "pos": "접속사"},
-  {"word": "そして", "reading": "そして", "meaning": "그리고", "pos": "접속사"},
-  {"word": "または", "reading": "または", "meaning": "또는, 혹은", "pos": "접속사"},
-  {"word": "ところで", "reading": "ところで", "meaning": "그런데, 그건 그렇고", "pos": "접속사"},
-  {"word": "つまり", "reading": "つまり", "meaning": "즉, 다시 말해", "pos": "접속사"},
-
-  {"word": "感じる", "reading": "かんじる", "meaning": "느끼다", "pos": "동사"},
-  {"word": "忘れる", "reading": "わすれる", "meaning": "잊다, 잊어버리다", "pos": "동사"},
-  {"word": "離れる", "reading": "はなれる", "meaning": "떨어지다, 멀어지다", "pos": "동사"},
-  {"word": "届く", "reading": "とどく", "meaning": "닿다, 도착하다", "pos": "동사"},
-  {"word": "消える", "reading": "きえる", "meaning": "사라지다, 꺼지다", "pos": "동사"},
-  {"word": "守る", "reading": "まもる", "meaning": "지키다, 보호하다", "pos": "동사"},
-  {"word": "抱く", "reading": "だく", "meaning": "안다, 품다", "pos": "동사"},
-  {"word": "願う", "reading": "ねがう", "meaning": "바라다, 원하다", "pos": "동사"},
-  {"word": "輝く", "reading": "かがやく", "meaning": "빛나다, 반짝이다", "pos": "동사"},
-  {"word": "叫ぶ", "reading": "さけぶ", "meaning": "외치다, 소리치다", "pos": "동사"},
-  {"word": "眠る", "reading": "ねむる", "meaning": "잠들다, 자다", "pos": "동사"},
-  {"word": "覚める", "reading": "さめる", "meaning": "깨다, 잠에서 깨다", "pos": "동사"},
-  {"word": "流れる", "reading": "ながれる", "meaning": "흐르다", "pos": "동사"},
-  {"word": "流す", "reading": "ながす", "meaning": "흘리다, 흘려보내다", "pos": "동사"},
-  {"word": "照らす", "reading": "てらす", "meaning": "비추다", "pos": "동사"},
-  {"word": "包む", "reading": "つつむ", "meaning": "감싸다, 싸다", "pos": "동사"},
-  {"word": "響く", "reading": "ひびく", "meaning": "울리다, 울려 퍼지다", "pos": "동사"},
-  {"word": "揺れる", "reading": "ゆれる", "meaning": "흔들리다", "pos": "동사"},
-  {"word": "染まる", "reading": "そまる", "meaning": "물들다", "pos": "동사"},
-  {"word": "溢れる", "reading": "あふれる", "meaning": "넘치다", "pos": "동사"},
-  {"word": "叶う", "reading": "かなう", "meaning": "이루어지다", "pos": "동사"},
-  {"word": "叶える", "reading": "かなえる", "meaning": "이루다", "pos": "동사"},
-  {"word": "逃げる", "reading": "にげる", "meaning": "도망치다", "pos": "동사"},
-  {"word": "追う", "reading": "おう", "meaning": "쫓다, 뒤쫓다", "pos": "동사"},
-  {"word": "追いかける", "reading": "おいかける", "meaning": "뒤쫓다, 쫓아가다", "pos": "동사"},
-  {"word": "傷つく", "reading": "きずつく", "meaning": "상처받다", "pos": "동사"},
-  {"word": "傷つける", "reading": "きずつける", "meaning": "상처를 입히다", "pos": "동사"},
-  {"word": "許す", "reading": "ゆるす", "meaning": "용서하다, 허락하다", "pos": "동사"},
-  {"word": "誓う", "reading": "ちかう", "meaning": "맹세하다", "pos": "동사"},
-  {"word": "描く", "reading": "えがく", "meaning": "그리다, 묘사하다", "pos": "동사"},
-  {"word": "歌う", "reading": "うたう", "meaning": "노래하다", "pos": "동사"},
-  {"word": "踊る", "reading": "おどる", "meaning": "춤추다", "pos": "동사"},
-  {"word": "奏でる", "reading": "かなでる", "meaning": "연주하다", "pos": "동사"},
-  {"word": "飛ぶ", "reading": "とぶ", "meaning": "날다", "pos": "동사"},
-  {"word": "飛ばす", "reading": "とばす", "meaning": "날리다", "pos": "동사"},
-  {"word": "走る", "reading": "はしる", "meaning": "달리다", "pos": "동사"},
-  {"word": "止まる", "reading": "とまる", "meaning": "멈추다, 서다", "pos": "동사"},
-  {"word": "止める", "reading": "とめる", "meaning": "멈추게 하다, 세우다", "pos": "동사"},
-  {"word": "隠す", "reading": "かくす", "meaning": "숨기다", "pos": "동사"},
-  {"word": "隠れる", "reading": "かくれる", "meaning": "숨다", "pos": "동사"},
-  {"word": "重ねる", "reading": "かさねる", "meaning": "겹치다, 포개다", "pos": "동사"},
-  {"word": "繋がる", "reading": "つながる", "meaning": "이어지다, 연결되다", "pos": "동사"},
-  {"word": "繋ぐ", "reading": "つなぐ", "meaning": "잇다, 연결하다", "pos": "동사"},
-  {"word": "咲く", "reading": "さく", "meaning": "피다 (꽃이)", "pos": "동사"},
-  {"word": "散る", "reading": "ちる", "meaning": "지다 (꽃잎이), 흩어지다", "pos": "동사"},
-  {"word": "溶ける", "reading": "とける", "meaning": "녹다", "pos": "동사"},
-  {"word": "凍る", "reading": "こおる", "meaning": "얼다", "pos": "동사"},
-  {"word": "濡れる", "reading": "ぬれる", "meaning": "젖다", "pos": "동사"},
-  {"word": "乾く", "reading": "かわく", "meaning": "마르다", "pos": "동사"},
-  {"word": "刻む", "reading": "きざむ", "meaning": "새기다, 잘게 썰다", "pos": "동사"},
-  {"word": "閉じる", "reading": "とじる", "meaning": "닫다, 감다 (눈을)", "pos": "동사"},
-  {"word": "開く", "reading": "ひらく", "meaning": "열다, 펼치다", "pos": "동사"},
-  {"word": "抱きしめる", "reading": "だきしめる", "meaning": "꼭 안다, 껴안다", "pos": "동사"},
-  {"word": "振り向く", "reading": "ふりむく", "meaning": "뒤돌아보다", "pos": "동사"},
-  {"word": "見上げる", "reading": "みあげる", "meaning": "올려다보다", "pos": "동사"},
-  {"word": "見守る", "reading": "みまもる", "meaning": "지켜보다", "pos": "동사"},
-  {"word": "思い出", "reading": "おもいで", "meaning": "추억", "pos": "명사"},
-  {"word": "出会い", "reading": "であい", "meaning": "만남", "pos": "명사"},
-  {"word": "出会う", "reading": "であう", "meaning": "만나다", "pos": "동사"},
-  {"word": "呼びかける", "reading": "よびかける", "meaning": "부르다, 호소하다", "pos": "동사"},
-  {"word": "沈む", "reading": "しずむ", "meaning": "가라앉다, 지다 (해가)", "pos": "동사"},
-  {"word": "昇る", "reading": "のぼる", "meaning": "떠오르다, 오르다", "pos": "동사"},
-  {"word": "震える", "reading": "ふるえる", "meaning": "떨리다, 떨다", "pos": "동사"},
-  {"word": "微笑む", "reading": "ほほえむ", "meaning": "미소짓다", "pos": "동사"},
-  {"word": "つぶやく", "reading": "つぶやく", "meaning": "중얼거리다", "pos": "동사"},
-  {"word": "ささやく", "reading": "ささやく", "meaning": "속삭이다", "pos": "동사"},
-  {"word": "握る", "reading": "にぎる", "meaning": "쥐다, 잡다", "pos": "동사"},
-  {"word": "放す", "reading": "はなす", "meaning": "놓다, 놓아주다", "pos": "동사"},
-  {"word": "見つめる", "reading": "みつめる", "meaning": "바라보다, 응시하다", "pos": "동사"},
-  {"word": "振る", "reading": "ふる", "meaning": "흔들다, 뿌리치다", "pos": "동사"},
-  {"word": "支える", "reading": "ささえる", "meaning": "지탱하다, 떠받치다", "pos": "동사"},
-  {"word": "祝う", "reading": "いわう", "meaning": "축하하다", "pos": "동사"},
-  {"word": "悩む", "reading": "なやむ", "meaning": "고민하다, 괴로워하다", "pos": "동사"},
-  {"word": "迷う", "reading": "まよう", "meaning": "헤매다, 망설이다", "pos": "동사"},
-  {"word": "癒す", "reading": "いやす", "meaning": "치유하다, 달래다", "pos": "동사"},
-  {"word": "焦がす", "reading": "こがす", "meaning": "태우다", "pos": "동사"},
-  {"word": "満たす", "reading": "みたす", "meaning": "채우다, 충족시키다", "pos": "동사"},
-  {"word": "溜まる", "reading": "たまる", "meaning": "쌓이다, 모이다", "pos": "동사"},
-
-  {"word": "涙", "reading": "なみだ", "meaning": "눈물", "pos": "명사"},
-  {"word": "夢", "reading": "ゆめ", "meaning": "꿈", "pos": "명사"},
-  {"word": "希望", "reading": "きぼう", "meaning": "희망", "pos": "명사"},
-  {"word": "絶望", "reading": "ぜつぼう", "meaning": "절망", "pos": "명사"},
-  {"word": "愛", "reading": "あい", "meaning": "사랑", "pos": "명사"},
-  {"word": "恋", "reading": "こい", "meaning": "연애, 사랑", "pos": "명사"},
-  {"word": "恋人", "reading": "こいびと", "meaning": "연인", "pos": "명사"},
-  {"word": "片思い", "reading": "かたおもい", "meaning": "짝사랑", "pos": "명사"},
-  {"word": "心", "reading": "こころ", "meaning": "마음", "pos": "명사"},
-  {"word": "胸", "reading": "むね", "meaning": "가슴", "pos": "명사"},
-  {"word": "想い", "reading": "おもい", "meaning": "마음, 생각, 그리움", "pos": "명사"},
-  {"word": "光", "reading": "ひかり", "meaning": "빛", "pos": "명사"},
-  {"word": "影", "reading": "かげ", "meaning": "그림자", "pos": "명사"},
-  {"word": "闇", "reading": "やみ", "meaning": "어둠", "pos": "명사"},
-  {"word": "空", "reading": "そら", "meaning": "하늘", "pos": "명사"},
-  {"word": "星", "reading": "ほし", "meaning": "별", "pos": "명사"},
-  {"word": "月", "reading": "つき", "meaning": "달", "pos": "명사"},
-  {"word": "風", "reading": "かぜ", "meaning": "바람", "pos": "명사"},
-  {"word": "雨", "reading": "あめ", "meaning": "비", "pos": "명사"},
-  {"word": "雪", "reading": "ゆき", "meaning": "눈 (雪)", "pos": "명사"},
-  {"word": "花", "reading": "はな", "meaning": "꽃", "pos": "명사"},
-  {"word": "桜", "reading": "さくら", "meaning": "벚꽃", "pos": "명사"},
-  {"word": "海", "reading": "うみ", "meaning": "바다", "pos": "명사"},
-  {"word": "波", "reading": "なみ", "meaning": "파도", "pos": "명사"},
-  {"word": "傷", "reading": "きず", "meaning": "상처", "pos": "명사"},
-  {"word": "痛み", "reading": "いたみ", "meaning": "아픔, 고통", "pos": "명사"},
-  {"word": "幸せ", "reading": "しあわせ", "meaning": "행복", "pos": "명사"},
-  {"word": "笑顔", "reading": "えがお", "meaning": "웃는 얼굴, 미소", "pos": "명사"},
-  {"word": "居場所", "reading": "いばしょ", "meaning": "있을 곳, 자리", "pos": "명사"},
-  {"word": "嘘", "reading": "うそ", "meaning": "거짓말", "pos": "명사"},
-  {"word": "運命", "reading": "うんめい", "meaning": "운명", "pos": "명사"},
-  {"word": "奇跡", "reading": "きせき", "meaning": "기적", "pos": "명사"},
-  {"word": "軌跡", "reading": "きせき", "meaning": "궤적", "pos": "명사"},
-  {"word": "永遠", "reading": "えいえん", "meaning": "영원", "pos": "명사"},
-  {"word": "瞬間", "reading": "しゅんかん", "meaning": "순간", "pos": "명사"},
-  {"word": "季節", "reading": "きせつ", "meaning": "계절", "pos": "명사"},
-  {"word": "世界", "reading": "せかい", "meaning": "세계", "pos": "명사"},
-  {"word": "未来", "reading": "みらい", "meaning": "미래", "pos": "명사"},
-  {"word": "過去", "reading": "かこ", "meaning": "과거", "pos": "명사"},
-  {"word": "現在", "reading": "げんざい", "meaning": "현재", "pos": "명사"},
-  {"word": "時代", "reading": "じだい", "meaning": "시대", "pos": "명사"},
-  {"word": "命", "reading": "いのち", "meaning": "생명, 목숨", "pos": "명사"},
-  {"word": "声", "reading": "こえ", "meaning": "목소리", "pos": "명사"},
-  {"word": "歌", "reading": "うた", "meaning": "노래", "pos": "명사"},
-  {"word": "音", "reading": "おと", "meaning": "소리", "pos": "명사"},
-  {"word": "色", "reading": "いろ", "meaning": "색, 색깔", "pos": "명사"},
-  {"word": "道", "reading": "みち", "meaning": "길", "pos": "명사"},
-  {"word": "手", "reading": "て", "meaning": "손", "pos": "명사"},
-  {"word": "指", "reading": "ゆび", "meaning": "손가락", "pos": "명사"},
-  {"word": "翼", "reading": "つばさ", "meaning": "날개", "pos": "명사"},
-  {"word": "勇気", "reading": "ゆうき", "meaning": "용기", "pos": "명사"},
-  {"word": "自信", "reading": "じしん", "meaning": "자신감", "pos": "명사"},
-  {"word": "感謝", "reading": "かんしゃ", "meaning": "감사", "pos": "명사"},
-  {"word": "後悔", "reading": "こうかい", "meaning": "후회", "pos": "명사"},
-  {"word": "孤独", "reading": "こどく", "meaning": "고독", "pos": "명사"},
-  {"word": "仲間", "reading": "なかま", "meaning": "동료, 친구", "pos": "명사"},
-  {"word": "絆", "reading": "きずな", "meaning": "유대, 인연", "pos": "명사"},
-  {"word": "別れ", "reading": "わかれ", "meaning": "이별", "pos": "명사"},
-  {"word": "再会", "reading": "さいかい", "meaning": "재회", "pos": "명사"},
-  {"word": "答え", "reading": "こたえ", "meaning": "대답, 정답", "pos": "명사"},
-  {"word": "意志", "reading": "いし", "meaning": "의지", "pos": "명사"},
-  {"word": "覚悟", "reading": "かくご", "meaning": "각오", "pos": "명사"},
-  {"word": "記憶", "reading": "きおく", "meaning": "기억", "pos": "명사"},
-  {"word": "情熱", "reading": "じょうねつ", "meaning": "열정", "pos": "명사"},
-  {"word": "感情", "reading": "かんじょう", "meaning": "감정", "pos": "명사"},
-  {"word": "不安", "reading": "ふあん", "meaning": "불안", "pos": "명사"},
-  {"word": "安心", "reading": "あんしん", "meaning": "안심", "pos": "명사"},
-  {"word": "夕日", "reading": "ゆうひ", "meaning": "석양", "pos": "명사"},
-  {"word": "朝日", "reading": "あさひ", "meaning": "아침 해", "pos": "명사"},
-  {"word": "夜空", "reading": "よぞら", "meaning": "밤하늘", "pos": "명사"},
-  {"word": "虹", "reading": "にじ", "meaning": "무지개", "pos": "명사"},
-
-  {"word": "切ない", "reading": "せつない", "meaning": "애절하다, 가슴 아프다", "pos": "형용사"},
-  {"word": "懐かしい", "reading": "なつかしい", "meaning": "그립다", "pos": "형용사"},
-  {"word": "眩しい", "reading": "まぶしい", "meaning": "눈부시다", "pos": "형용사"},
-  {"word": "温かい", "reading": "あたたかい", "meaning": "따뜻하다 (마음이)", "pos": "형용사"},
-  {"word": "儚い", "reading": "はかない", "meaning": "덧없다, 허무하다", "pos": "형용사"},
-  {"word": "美しい", "reading": "うつくしい", "meaning": "아름답다", "pos": "형용사"},
-  {"word": "激しい", "reading": "はげしい", "meaning": "격렬하다, 거세다", "pos": "형용사"},
-  {"word": "淋しい", "reading": "さみしい", "meaning": "외롭다, 쓸쓸하다", "pos": "형용사"},
-  {"word": "深い", "reading": "ふかい", "meaning": "깊다", "pos": "형용사"},
-  {"word": "広い", "reading": "ひろい", "meaning": "넓다", "pos": "형용사"},
-  {"word": "明るい", "reading": "あかるい", "meaning": "밝다", "pos": "형용사"},
-  {"word": "柔らかい", "reading": "やわらかい", "meaning": "부드럽다", "pos": "형용사"},
-  {"word": "細い", "reading": "ほそい", "meaning": "가늘다", "pos": "형용사"},
-  {"word": "狭い", "reading": "せまい", "meaning": "좁다", "pos": "형용사"},
-  {"word": "恥ずかしい", "reading": "はずかしい", "meaning": "부끄럽다", "pos": "형용사"},
-  {"word": "羨ましい", "reading": "うらやましい", "meaning": "부럽다", "pos": "형용사"},
-
-  {"word": "素敵な", "reading": "すてきな", "meaning": "멋진, 근사한", "pos": "な형용사"},
-  {"word": "静かな", "reading": "しずかな", "meaning": "조용한", "pos": "な형용사"},
-  {"word": "穏やかな", "reading": "おだやかな", "meaning": "온화한, 평온한", "pos": "な형용사"},
-  {"word": "純粋な", "reading": "じゅんすいな", "meaning": "순수한", "pos": "な형용사"},
-  {"word": "切実な", "reading": "せつじつな", "meaning": "절실한", "pos": "な형용사"},
-  {"word": "新鮮な", "reading": "しんせんな", "meaning": "신선한", "pos": "な형용사"},
-  {"word": "華やかな", "reading": "はなやかな", "meaning": "화려한", "pos": "な형용사"},
-  {"word": "確かな", "reading": "たしかな", "meaning": "확실한", "pos": "な형용사"},
-  {"word": "豊かな", "reading": "ゆたかな", "meaning": "풍요로운, 풍부한", "pos": "な형용사"},
-  {"word": "微かな", "reading": "かすかな", "meaning": "희미한", "pos": "な형용사"},
-
-  {"word": "ずっと", "reading": "ずっと", "meaning": "계속, 쭉", "pos": "부사"},
-  {"word": "いつか", "reading": "いつか", "meaning": "언젠가", "pos": "부사"},
-  {"word": "いつも", "reading": "いつも", "meaning": "항상, 늘", "pos": "부사"},
-  {"word": "いつまでも", "reading": "いつまでも", "meaning": "언제까지나, 영원히", "pos": "부사"},
-  {"word": "そっと", "reading": "そっと", "meaning": "살짝, 조용히", "pos": "부사"},
-  {"word": "きっかけ", "reading": "きっかけ", "meaning": "계기", "pos": "명사"},
-  {"word": "ただ", "reading": "ただ", "meaning": "다만, 그저", "pos": "부사"},
-  {"word": "まるで", "reading": "まるで", "meaning": "마치, 꼭", "pos": "부사"},
-  {"word": "ふと", "reading": "ふと", "meaning": "문득, 불현듯", "pos": "부사"},
-  {"word": "きらきら", "reading": "きらきら", "meaning": "반짝반짝", "pos": "부사"},
-  {"word": "ひとりで", "reading": "ひとりで", "meaning": "혼자서", "pos": "부사"},
-  {"word": "一緒に", "reading": "いっしょに", "meaning": "함께", "pos": "부사"},
-  {"word": "必ず", "reading": "かならず", "meaning": "반드시", "pos": "부사"},
-  {"word": "突然", "reading": "とつぜん", "meaning": "갑자기", "pos": "부사"},
-  {"word": "段々", "reading": "だんだん", "meaning": "점점", "pos": "부사"},
-  {"word": "少しずつ", "reading": "すこしずつ", "meaning": "조금씩", "pos": "부사"},
-  {"word": "何度も", "reading": "なんども", "meaning": "몇 번이나, 여러 번", "pos": "부사"},
-  {"word": "二度と", "reading": "にどと", "meaning": "두 번 다시 (~않다)", "pos": "부사"},
-  {"word": "今すぐ", "reading": "いますぐ", "meaning": "지금 당장", "pos": "부사"},
-  {"word": "やがて", "reading": "やがて", "meaning": "이윽고, 머지않아", "pos": "부사"}
+  {
+    "word": "あ",
+    "reading": "あ",
+    "meaning": "아(감탄)",
+    "pos": "명사"
+  },
+  {
+    "word": "挨拶",
+    "reading": "あいさつ",
+    "meaning": "인사",
+    "pos": "명사"
+  },
+  {
+    "word": "あいさつする",
+    "reading": "あいさつする",
+    "meaning": "인사하다",
+    "pos": "동사"
+  },
+  {
+    "word": "間",
+    "reading": "あいだ",
+    "meaning": "사이",
+    "pos": "명사"
+  },
+  {
+    "word": "合う",
+    "reading": "あう",
+    "meaning": "맞는",
+    "pos": "동사"
+  },
+  {
+    "word": "あかちゃん",
+    "reading": "あかちゃん",
+    "meaning": "아기",
+    "pos": "명사"
+  },
+  {
+    "word": "赤ちゃん",
+    "reading": "あかちゃん",
+    "meaning": "아기",
+    "pos": "명사"
+  },
+  {
+    "word": "赤ん坊",
+    "reading": "あかんぼう",
+    "meaning": "아기",
+    "pos": "명사"
+  },
+  {
+    "word": "上がる",
+    "reading": "あがる",
+    "meaning": "오르다",
+    "pos": "동사"
+  },
+  {
+    "word": "あげる",
+    "reading": "あげる",
+    "meaning": "주다",
+    "pos": "동사"
+  },
+  {
+    "word": "浅い",
+    "reading": "あさい",
+    "meaning": "얕은",
+    "pos": "い형용사"
+  },
+  {
+    "word": "味",
+    "reading": "あじ",
+    "meaning": "맛",
+    "pos": "명사"
+  },
+  {
+    "word": "遊び",
+    "reading": "あそび",
+    "meaning": "놀이",
+    "pos": "명사"
+  },
+  {
+    "word": "集まる",
+    "reading": "あつまる",
+    "meaning": "모이다",
+    "pos": "동사"
+  },
+  {
+    "word": "集める",
+    "reading": "あつめる",
+    "meaning": "모으다",
+    "pos": "동사"
+  },
+  {
+    "word": "謝る",
+    "reading": "あやまる",
+    "meaning": "사과하다",
+    "pos": "동사"
+  },
+  {
+    "word": "安心",
+    "reading": "あんしん",
+    "meaning": "안심",
+    "pos": "명사"
+  },
+  {
+    "word": "安全",
+    "reading": "あんぜん",
+    "meaning": "안전",
+    "pos": "な형용사"
+  },
+  {
+    "word": "あんな",
+    "reading": "あんな",
+    "meaning": "저런",
+    "pos": "명사"
+  },
+  {
+    "word": "案内",
+    "reading": "あんない",
+    "meaning": "안내",
+    "pos": "명사"
+  },
+  {
+    "word": "案内する",
+    "reading": "あんないする",
+    "meaning": "안내하다",
+    "pos": "동사"
+  },
+  {
+    "word": "以下",
+    "reading": "いか",
+    "meaning": "이하",
+    "pos": "명사"
+  },
+  {
+    "word": "以外",
+    "reading": "いがい",
+    "meaning": "이외",
+    "pos": "명사"
+  },
+  {
+    "word": "医学",
+    "reading": "いがく",
+    "meaning": "의학",
+    "pos": "명사"
+  },
+  {
+    "word": "生きる",
+    "reading": "いきる",
+    "meaning": "살다",
+    "pos": "동사"
+  },
+  {
+    "word": "いくら～ても",
+    "reading": "いくら～ても",
+    "meaning": "아무리 ~해도",
+    "pos": "명사"
+  },
+  {
+    "word": "意見",
+    "reading": "いけん",
+    "meaning": "의견",
+    "pos": "명사"
+  },
+  {
+    "word": "石",
+    "reading": "いし",
+    "meaning": "돌",
+    "pos": "명사"
+  },
+  {
+    "word": "いじめる",
+    "reading": "いじめる",
+    "meaning": "애타게하다",
+    "pos": "동사"
+  },
+  {
+    "word": "以上",
+    "reading": "いじょう",
+    "meaning": "이상",
+    "pos": "명사"
+  },
+  {
+    "word": "急ぐ",
+    "reading": "いそぐ",
+    "meaning": "서두르다",
+    "pos": "동사"
+  },
+  {
+    "word": "致す",
+    "reading": "いたす",
+    "meaning": "가져오다",
+    "pos": "동사"
+  },
+  {
+    "word": "一度",
+    "reading": "いちど",
+    "meaning": "일단",
+    "pos": "명사"
+  },
+  {
+    "word": "一生懸命",
+    "reading": "いっしょうけんめい",
+    "meaning": "목숨 걸고 일함",
+    "pos": "な형용사"
+  },
+  {
+    "word": "いっぱい",
+    "reading": "いっぱい",
+    "meaning": "가득",
+    "pos": "부사"
+  },
+  {
+    "word": "一杯",
+    "reading": "いっぱい",
+    "meaning": "가득",
+    "pos": "부사"
+  },
+  {
+    "word": "糸",
+    "reading": "いと",
+    "meaning": "실",
+    "pos": "명사"
+  },
+  {
+    "word": "以内",
+    "reading": "いない",
+    "meaning": "이내",
+    "pos": "명사"
+  },
+  {
+    "word": "田舎",
+    "reading": "いなか",
+    "meaning": "시골",
+    "pos": "명사"
+  },
+  {
+    "word": "祈る",
+    "reading": "いのる",
+    "meaning": "빌다",
+    "pos": "동사"
+  },
+  {
+    "word": "いらっしゃる",
+    "reading": "いらっしゃる",
+    "meaning": "오시다",
+    "pos": "동사"
+  },
+  {
+    "word": "植える",
+    "reading": "うえる",
+    "meaning": "심다",
+    "pos": "동사"
+  },
+  {
+    "word": "うかがう",
+    "reading": "うかがう",
+    "meaning": "방문하다",
+    "pos": "동사"
+  },
+  {
+    "word": "伺う",
+    "reading": "うかがう",
+    "meaning": "여쭙다, 찾아뵙다",
+    "pos": "동사"
+  },
+  {
+    "word": "受付",
+    "reading": "うけつけ",
+    "meaning": "접수",
+    "pos": "명사"
+  },
+  {
+    "word": "受ける",
+    "reading": "うける",
+    "meaning": "받다",
+    "pos": "동사"
+  },
+  {
+    "word": "動く",
+    "reading": "うごく",
+    "meaning": "움직이다",
+    "pos": "동사"
+  },
+  {
+    "word": "うそ",
+    "reading": "うそ",
+    "meaning": "거짓말",
+    "pos": "명사"
+  },
+  {
+    "word": "嘘",
+    "reading": "うそ",
+    "meaning": "거짓말",
+    "pos": "명사"
+  },
+  {
+    "word": "内",
+    "reading": "うち",
+    "meaning": "안",
+    "pos": "명사"
+  },
+  {
+    "word": "打つ",
+    "reading": "うつ",
+    "meaning": "때리다",
+    "pos": "동사"
+  },
+  {
+    "word": "美しい",
+    "reading": "うつくしい",
+    "meaning": "아름다운",
+    "pos": "い형용사"
+  },
+  {
+    "word": "写す",
+    "reading": "うつす",
+    "meaning": "찍다",
+    "pos": "동사"
+  },
+  {
+    "word": "移る",
+    "reading": "うつる",
+    "meaning": "이동하다",
+    "pos": "동사"
+  },
+  {
+    "word": "腕",
+    "reading": "うで",
+    "meaning": "팔",
+    "pos": "명사"
+  },
+  {
+    "word": "うまい",
+    "reading": "うまい",
+    "meaning": "맛있는",
+    "pos": "い형용사"
+  },
+  {
+    "word": "裏",
+    "reading": "うら",
+    "meaning": "뒷면",
+    "pos": "명사"
+  },
+  {
+    "word": "売り場",
+    "reading": "うりば",
+    "meaning": "매장",
+    "pos": "명사"
+  },
+  {
+    "word": "うれしい",
+    "reading": "うれしい",
+    "meaning": "기쁜",
+    "pos": "い형용사"
+  },
+  {
+    "word": "嬉しい",
+    "reading": "うれしい",
+    "meaning": "기쁜",
+    "pos": "い형용사"
+  },
+  {
+    "word": "うん",
+    "reading": "うん",
+    "meaning": "예",
+    "pos": "감탄사"
+  },
+  {
+    "word": "運転",
+    "reading": "うんてん",
+    "meaning": "운전",
+    "pos": "명사"
+  },
+  {
+    "word": "運転手",
+    "reading": "うんてんしゅ",
+    "meaning": "운전수",
+    "pos": "명사"
+  },
+  {
+    "word": "運動",
+    "reading": "うんどう",
+    "meaning": "운동",
+    "pos": "명사"
+  },
+  {
+    "word": "運動する",
+    "reading": "うんどうする",
+    "meaning": "운동하다",
+    "pos": "동사"
+  },
+  {
+    "word": "枝",
+    "reading": "えだ",
+    "meaning": "나뭇 가지",
+    "pos": "명사"
+  },
+  {
+    "word": "選ぶ",
+    "reading": "えらぶ",
+    "meaning": "선택하다",
+    "pos": "동사"
+  },
+  {
+    "word": "遠慮",
+    "reading": "えんりょ",
+    "meaning": "사양",
+    "pos": "명사"
+  },
+  {
+    "word": "遠慮する",
+    "reading": "えんりょする",
+    "meaning": "사양하다",
+    "pos": "동사"
+  },
+  {
+    "word": "おいでになる",
+    "reading": "おいでになる",
+    "meaning": "오시다",
+    "pos": "동사"
+  },
+  {
+    "word": "お祝い",
+    "reading": "おいわい",
+    "meaning": "축하",
+    "pos": "명사"
+  },
+  {
+    "word": "おかげ",
+    "reading": "おかげ",
+    "meaning": "덕분",
+    "pos": "명사"
+  },
+  {
+    "word": "お陰",
+    "reading": "おかげ",
+    "meaning": "덕분",
+    "pos": "명사"
+  },
+  {
+    "word": "おかしい",
+    "reading": "おかしい",
+    "meaning": "재미있는",
+    "pos": "い형용사"
+  },
+  {
+    "word": "億",
+    "reading": "おく",
+    "meaning": "일억",
+    "pos": "명사"
+  },
+  {
+    "word": "屋上",
+    "reading": "おくじょう",
+    "meaning": "옥상",
+    "pos": "명사"
+  },
+  {
+    "word": "贈り物",
+    "reading": "おくりもの",
+    "meaning": "선물",
+    "pos": "명사"
+  },
+  {
+    "word": "送る",
+    "reading": "おくる",
+    "meaning": "보내다",
+    "pos": "동사"
+  },
+  {
+    "word": "遅れる",
+    "reading": "おくれる",
+    "meaning": "늦다",
+    "pos": "동사"
+  },
+  {
+    "word": "お子さん",
+    "reading": "おこさん",
+    "meaning": "자녀분",
+    "pos": "명사"
+  },
+  {
+    "word": "起こす",
+    "reading": "おこす",
+    "meaning": "깨우다",
+    "pos": "동사"
+  },
+  {
+    "word": "行う",
+    "reading": "おこなう",
+    "meaning": "하다",
+    "pos": "동사"
+  },
+  {
+    "word": "怒る",
+    "reading": "おこる",
+    "meaning": "화내다",
+    "pos": "동사"
+  },
+  {
+    "word": "押し入れ",
+    "reading": "おしいれ",
+    "meaning": "옷장",
+    "pos": "명사"
+  },
+  {
+    "word": "お嬢さん",
+    "reading": "おじょうさん",
+    "meaning": "아가씨",
+    "pos": "명사"
+  },
+  {
+    "word": "お宅",
+    "reading": "おたく",
+    "meaning": "댁",
+    "pos": "명사"
+  },
+  {
+    "word": "落る",
+    "reading": "おちる",
+    "meaning": "떨어지다",
+    "pos": "동사"
+  },
+  {
+    "word": "おっしゃる",
+    "reading": "おっしゃる",
+    "meaning": "말씀하시다",
+    "pos": "동사"
+  },
+  {
+    "word": "夫",
+    "reading": "おっと",
+    "meaning": "남편",
+    "pos": "명사"
+  },
+  {
+    "word": "おつり",
+    "reading": "おつり",
+    "meaning": "잔돈",
+    "pos": "명사"
+  },
+  {
+    "word": "音",
+    "reading": "おと",
+    "meaning": "소리",
+    "pos": "명사"
+  },
+  {
+    "word": "落す",
+    "reading": "おとす",
+    "meaning": "떨어 뜨리다",
+    "pos": "동사"
+  },
+  {
+    "word": "踊り",
+    "reading": "おどり",
+    "meaning": "춤",
+    "pos": "명사"
+  },
+  {
+    "word": "踊る",
+    "reading": "おどる",
+    "meaning": "춤추다",
+    "pos": "동사"
+  },
+  {
+    "word": "驚く",
+    "reading": "おどろく",
+    "meaning": "놀라다",
+    "pos": "동사"
+  },
+  {
+    "word": "お祭り",
+    "reading": "おまつり",
+    "meaning": "축제",
+    "pos": "명사"
+  },
+  {
+    "word": "お見舞い",
+    "reading": "おみまい",
+    "meaning": "병문안",
+    "pos": "い형용사"
+  },
+  {
+    "word": "お土産",
+    "reading": "おみやげ",
+    "meaning": "기념품",
+    "pos": "명사"
+  },
+  {
+    "word": "思い出す",
+    "reading": "おもいだす",
+    "meaning": "기억하다",
+    "pos": "동사"
+  },
+  {
+    "word": "思う",
+    "reading": "おもう",
+    "meaning": "생각하다",
+    "pos": "동사"
+  },
+  {
+    "word": "おもちゃ",
+    "reading": "おもちゃ",
+    "meaning": "장난감",
+    "pos": "명사"
+  },
+  {
+    "word": "表",
+    "reading": "おもて",
+    "meaning": "표면",
+    "pos": "명사"
+  },
+  {
+    "word": "親",
+    "reading": "おや",
+    "meaning": "부모",
+    "pos": "명사"
+  },
+  {
+    "word": "下りる",
+    "reading": "おりる",
+    "meaning": "내리다",
+    "pos": "동사"
+  },
+  {
+    "word": "折る",
+    "reading": "おる",
+    "meaning": "접다",
+    "pos": "동사"
+  },
+  {
+    "word": "おる",
+    "reading": "おる",
+    "meaning": "있다(겸양)",
+    "pos": "명사"
+  },
+  {
+    "word": "お礼",
+    "reading": "おれい",
+    "meaning": "사례",
+    "pos": "명사"
+  },
+  {
+    "word": "折れる",
+    "reading": "おれる",
+    "meaning": "접히다",
+    "pos": "동사"
+  },
+  {
+    "word": "終わり",
+    "reading": "おわり",
+    "meaning": "끝",
+    "pos": "명사"
+  },
+  {
+    "word": "海岸",
+    "reading": "かいがん",
+    "meaning": "해안",
+    "pos": "명사"
+  },
+  {
+    "word": "会議",
+    "reading": "かいぎ",
+    "meaning": "회의",
+    "pos": "명사"
+  },
+  {
+    "word": "会議室",
+    "reading": "かいぎしつ",
+    "meaning": "회의실",
+    "pos": "명사"
+  },
+  {
+    "word": "会場",
+    "reading": "かいじょう",
+    "meaning": "회의장",
+    "pos": "명사"
+  },
+  {
+    "word": "会話",
+    "reading": "かいわ",
+    "meaning": "대화",
+    "pos": "명사"
+  },
+  {
+    "word": "帰り",
+    "reading": "かえり",
+    "meaning": "귀가",
+    "pos": "명사"
+  },
+  {
+    "word": "変える",
+    "reading": "かえる",
+    "meaning": "바꾸다",
+    "pos": "동사"
+  },
+  {
+    "word": "科学",
+    "reading": "かがく",
+    "meaning": "과학",
+    "pos": "명사"
+  },
+  {
+    "word": "鏡",
+    "reading": "かがみ",
+    "meaning": "거울",
+    "pos": "명사"
+  },
+  {
+    "word": "飾る",
+    "reading": "かざる",
+    "meaning": "꾸미다",
+    "pos": "동사"
+  },
+  {
+    "word": "火事",
+    "reading": "かじ",
+    "meaning": "화재",
+    "pos": "명사"
+  },
+  {
+    "word": "堅い",
+    "reading": "かたい",
+    "meaning": "단단한",
+    "pos": "い형용사"
+  },
+  {
+    "word": "堅",
+    "reading": "かたい",
+    "meaning": "단단한",
+    "pos": "な형용사"
+  },
+  {
+    "word": "形",
+    "reading": "かたち",
+    "meaning": "형태",
+    "pos": "명사"
+  },
+  {
+    "word": "片付ける",
+    "reading": "かたづける",
+    "meaning": "정리하다",
+    "pos": "동사"
+  },
+  {
+    "word": "課長",
+    "reading": "かちょう",
+    "meaning": "과장",
+    "pos": "명사"
+  },
+  {
+    "word": "かっこう",
+    "reading": "かっこう",
+    "meaning": "모습",
+    "pos": "명사"
+  },
+  {
+    "word": "格好",
+    "reading": "かっこう",
+    "meaning": "모습, 모양",
+    "pos": "명사"
+  },
+  {
+    "word": "勝つ",
+    "reading": "かつ",
+    "meaning": "이기다",
+    "pos": "동사"
+  },
+  {
+    "word": "家内",
+    "reading": "かない",
+    "meaning": "아내",
+    "pos": "명사"
+  },
+  {
+    "word": "悲しい",
+    "reading": "かなしい",
+    "meaning": "슬픈",
+    "pos": "い형용사"
+  },
+  {
+    "word": "必ず",
+    "reading": "かならず",
+    "meaning": "반드시",
+    "pos": "명사"
+  },
+  {
+    "word": "お金持ち",
+    "reading": "かねもち",
+    "meaning": "부자",
+    "pos": "명사"
+  },
+  {
+    "word": "彼女",
+    "reading": "かのじょ",
+    "meaning": "그녀",
+    "pos": "대명사"
+  },
+  {
+    "word": "壁",
+    "reading": "かべ",
+    "meaning": "벽",
+    "pos": "명사"
+  },
+  {
+    "word": "かまう",
+    "reading": "かまう",
+    "meaning": "마음을 쓰다",
+    "pos": "동사"
+  },
+  {
+    "word": "髪",
+    "reading": "かみ",
+    "meaning": "머리",
+    "pos": "명사"
+  },
+  {
+    "word": "噛む",
+    "reading": "かむ",
+    "meaning": "씹다",
+    "pos": "동사"
+  },
+  {
+    "word": "通う",
+    "reading": "かよう",
+    "meaning": "다니다",
+    "pos": "동사"
+  },
+  {
+    "word": "彼",
+    "reading": "かれ",
+    "meaning": "그",
+    "pos": "대명사"
+  },
+  {
+    "word": "彼ら",
+    "reading": "かれら",
+    "meaning": "그들",
+    "pos": "대명사"
+  },
+  {
+    "word": "乾く",
+    "reading": "かわく",
+    "meaning": "건조하다",
+    "pos": "동사"
+  },
+  {
+    "word": "代わり",
+    "reading": "かわり",
+    "meaning": "대신",
+    "pos": "명사"
+  },
+  {
+    "word": "変わる",
+    "reading": "かわる",
+    "meaning": "바꾸다",
+    "pos": "동사"
+  },
+  {
+    "word": "考える",
+    "reading": "かんがえる",
+    "meaning": "고려하다",
+    "pos": "동사"
+  },
+  {
+    "word": "関係",
+    "reading": "かんけい",
+    "meaning": "관계",
+    "pos": "명사"
+  },
+  {
+    "word": "看護婦",
+    "reading": "かんごふ",
+    "meaning": "간호사",
+    "pos": "명사"
+  },
+  {
+    "word": "簡単",
+    "reading": "かんたん",
+    "meaning": "간단",
+    "pos": "な형용사"
+  },
+  {
+    "word": "頑張る",
+    "reading": "がんばる",
+    "meaning": "노력하다",
+    "pos": "동사"
+  },
+  {
+    "word": "気",
+    "reading": "き",
+    "meaning": "신경",
+    "pos": "명사"
+  },
+  {
+    "word": "機会",
+    "reading": "きかい",
+    "meaning": "기회",
+    "pos": "명사"
+  },
+  {
+    "word": "危険",
+    "reading": "きけん",
+    "meaning": "위험",
+    "pos": "な형용사"
+  },
+  {
+    "word": "聞こえる",
+    "reading": "きこえる",
+    "meaning": "들리다",
+    "pos": "동사"
+  },
+  {
+    "word": "汽車",
+    "reading": "きしゃ",
+    "meaning": "기차",
+    "pos": "명사"
+  },
+  {
+    "word": "季節",
+    "reading": "きせつ",
+    "meaning": "계절",
+    "pos": "명사"
+  },
+  {
+    "word": "規則",
+    "reading": "きそく",
+    "meaning": "규칙",
+    "pos": "명사"
+  },
+  {
+    "word": "きっと",
+    "reading": "きっと",
+    "meaning": "반드시",
+    "pos": "부사"
+  },
+  {
+    "word": "絹",
+    "reading": "きぬ",
+    "meaning": "실크",
+    "pos": "명사"
+  },
+  {
+    "word": "厳しい",
+    "reading": "きびしい",
+    "meaning": "엄격한",
+    "pos": "い형용사"
+  },
+  {
+    "word": "気分",
+    "reading": "きぶん",
+    "meaning": "기분",
+    "pos": "명사"
+  },
+  {
+    "word": "決まる",
+    "reading": "きまる",
+    "meaning": "정해지다",
+    "pos": "동사"
+  },
+  {
+    "word": "君",
+    "reading": "きみ",
+    "meaning": "너",
+    "pos": "대명사"
+  },
+  {
+    "word": "決める",
+    "reading": "きめる",
+    "meaning": "결정하다",
+    "pos": "동사"
+  },
+  {
+    "word": "気持ち",
+    "reading": "きもち",
+    "meaning": "마음",
+    "pos": "명사"
+  },
+  {
+    "word": "着物",
+    "reading": "きもの",
+    "meaning": "일본 옷",
+    "pos": "명사"
+  },
+  {
+    "word": "客",
+    "reading": "きゃく",
+    "meaning": "고객",
+    "pos": "명사"
+  },
+  {
+    "word": "急",
+    "reading": "きゅう",
+    "meaning": "갑자기",
+    "pos": "명사"
+  },
+  {
+    "word": "急行",
+    "reading": "きゅうこう",
+    "meaning": "급행",
+    "pos": "명사"
+  },
+  {
+    "word": "教育",
+    "reading": "きょういく",
+    "meaning": "교육",
+    "pos": "명사"
+  },
+  {
+    "word": "教会",
+    "reading": "きょうかい",
+    "meaning": "교회",
+    "pos": "명사"
+  },
+  {
+    "word": "競争",
+    "reading": "きょうそう",
+    "meaning": "경쟁",
+    "pos": "명사"
+  },
+  {
+    "word": "興味",
+    "reading": "きょうみ",
+    "meaning": "흥미",
+    "pos": "명사"
+  },
+  {
+    "word": "近所",
+    "reading": "きんじょ",
+    "meaning": "인근",
+    "pos": "명사"
+  },
+  {
+    "word": "技術",
+    "reading": "ぎじゅつ",
+    "meaning": "기술",
+    "pos": "명사"
+  },
+  {
+    "word": "空気",
+    "reading": "くうき",
+    "meaning": "공기",
+    "pos": "명사"
+  },
+  {
+    "word": "空港",
+    "reading": "くうこう",
+    "meaning": "공항",
+    "pos": "명사"
+  },
+  {
+    "word": "草",
+    "reading": "くさ",
+    "meaning": "잔디",
+    "pos": "명사"
+  },
+  {
+    "word": "くださる",
+    "reading": "くださる",
+    "meaning": "주시다",
+    "pos": "동사"
+  },
+  {
+    "word": "首",
+    "reading": "くび",
+    "meaning": "목",
+    "pos": "명사"
+  },
+  {
+    "word": "雲",
+    "reading": "くも",
+    "meaning": "구름",
+    "pos": "명사"
+  },
+  {
+    "word": "比べる",
+    "reading": "くらべる",
+    "meaning": "비교하다",
+    "pos": "동사"
+  },
+  {
+    "word": "くれる",
+    "reading": "くれる",
+    "meaning": "주다",
+    "pos": "동사"
+  },
+  {
+    "word": "暮れる",
+    "reading": "くれる",
+    "meaning": "저물다",
+    "pos": "동사"
+  },
+  {
+    "word": "具合",
+    "reading": "ぐあい",
+    "meaning": "상태",
+    "pos": "명사"
+  },
+  {
+    "word": "毛",
+    "reading": "け",
+    "meaning": "머리카락",
+    "pos": "명사"
+  },
+  {
+    "word": "計画",
+    "reading": "けいかく",
+    "meaning": "계획",
+    "pos": "명사"
+  },
+  {
+    "word": "計画する",
+    "reading": "けいかくする",
+    "meaning": "계획하다",
+    "pos": "동사"
+  },
+  {
+    "word": "経験",
+    "reading": "けいけん",
+    "meaning": "경험",
+    "pos": "명사"
+  },
+  {
+    "word": "警察",
+    "reading": "けいさつ",
+    "meaning": "경찰",
+    "pos": "명사"
+  },
+  {
+    "word": "経済",
+    "reading": "けいざい",
+    "meaning": "경제",
+    "pos": "명사"
+  },
+  {
+    "word": "けがする",
+    "reading": "けがする",
+    "meaning": "다치다",
+    "pos": "동사"
+  },
+  {
+    "word": "景色",
+    "reading": "けしき",
+    "meaning": "전망",
+    "pos": "명사"
+  },
+  {
+    "word": "消しゴム",
+    "reading": "けしゴム",
+    "meaning": "지우개",
+    "pos": "명사"
+  },
+  {
+    "word": "決して",
+    "reading": "けっして",
+    "meaning": "결코",
+    "pos": "부사"
+  },
+  {
+    "word": "けれど",
+    "reading": "けれど",
+    "meaning": "그렇지만",
+    "pos": "접속사"
+  },
+  {
+    "word": "けんかする",
+    "reading": "けんかする",
+    "meaning": "싸움하다",
+    "pos": "동사"
+  },
+  {
+    "word": "研究",
+    "reading": "けんきゅう",
+    "meaning": "연구",
+    "pos": "명사"
+  },
+  {
+    "word": "研究室",
+    "reading": "けんきゅうしつ",
+    "meaning": "연구실",
+    "pos": "명사"
+  },
+  {
+    "word": "見物",
+    "reading": "けんぶつ",
+    "meaning": "구경",
+    "pos": "명사"
+  },
+  {
+    "word": "下宿",
+    "reading": "げしゅく",
+    "meaning": "하숙",
+    "pos": "명사"
+  },
+  {
+    "word": "原因",
+    "reading": "げんいん",
+    "meaning": "원인",
+    "pos": "な형용사"
+  },
+  {
+    "word": "子",
+    "reading": "こ",
+    "meaning": "아이",
+    "pos": "명사"
+  },
+  {
+    "word": "こう",
+    "reading": "こう",
+    "meaning": "이렇게",
+    "pos": "명사"
+  },
+  {
+    "word": "郊外",
+    "reading": "こうがい",
+    "meaning": "교외",
+    "pos": "명사"
+  },
+  {
+    "word": "講義",
+    "reading": "こうぎ",
+    "meaning": "강의",
+    "pos": "명사"
+  },
+  {
+    "word": "工業",
+    "reading": "こうぎょう",
+    "meaning": "공업",
+    "pos": "명사"
+  },
+  {
+    "word": "高校",
+    "reading": "こうこう",
+    "meaning": "고등학교",
+    "pos": "명사"
+  },
+  {
+    "word": "高校生",
+    "reading": "こうこうせい",
+    "meaning": "고교생",
+    "pos": "명사"
+  },
+  {
+    "word": "工場",
+    "reading": "こうじょう",
+    "meaning": "공장",
+    "pos": "명사"
+  },
+  {
+    "word": "校長",
+    "reading": "こうちょう",
+    "meaning": "교장",
+    "pos": "명사"
+  },
+  {
+    "word": "交通",
+    "reading": "こうつう",
+    "meaning": "교통",
+    "pos": "명사"
+  },
+  {
+    "word": "高等学校",
+    "reading": "こうとうがっこう",
+    "meaning": "고등학교",
+    "pos": "명사"
+  },
+  {
+    "word": "講堂",
+    "reading": "こうどう",
+    "meaning": "강당",
+    "pos": "명사"
+  },
+  {
+    "word": "公務員",
+    "reading": "こうむいん",
+    "meaning": "공무원",
+    "pos": "명사"
+  },
+  {
+    "word": "国際",
+    "reading": "こくさい",
+    "meaning": "국제",
+    "pos": "명사"
+  },
+  {
+    "word": "心",
+    "reading": "こころ",
+    "meaning": "마음",
+    "pos": "명사"
+  },
+  {
+    "word": "故障",
+    "reading": "こしょう",
+    "meaning": "고장",
+    "pos": "명사"
+  },
+  {
+    "word": "故障する",
+    "reading": "こしょうする",
+    "meaning": "고장나다",
+    "pos": "동사"
+  },
+  {
+    "word": "答",
+    "reading": "こたえ",
+    "meaning": "답",
+    "pos": "명사"
+  },
+  {
+    "word": "こと",
+    "reading": "こと",
+    "meaning": "일",
+    "pos": "명사"
+  },
+  {
+    "word": "事",
+    "reading": "こと",
+    "meaning": "일, 것",
+    "pos": "명사"
+  },
+  {
+    "word": "小鳥",
+    "reading": "ことり",
+    "meaning": "작은 새",
+    "pos": "명사"
+  },
+  {
+    "word": "このあいだ",
+    "reading": "このあいだ",
+    "meaning": "전날",
+    "pos": "명사"
+  },
+  {
+    "word": "この間",
+    "reading": "このあいだ",
+    "meaning": "요전번",
+    "pos": "명사"
+  },
+  {
+    "word": "このごろ",
+    "reading": "このごろ",
+    "meaning": "요즈음",
+    "pos": "명사"
+  },
+  {
+    "word": "この頃",
+    "reading": "このごろ",
+    "meaning": "요즘",
+    "pos": "명사"
+  },
+  {
+    "word": "細かい",
+    "reading": "こまかい",
+    "meaning": "미세한",
+    "pos": "い형용사"
+  },
+  {
+    "word": "込む",
+    "reading": "こむ",
+    "meaning": "혼잡하다",
+    "pos": "동사"
+  },
+  {
+    "word": "米",
+    "reading": "こめ",
+    "meaning": "쌀",
+    "pos": "명사"
+  },
+  {
+    "word": "これから",
+    "reading": "これから",
+    "meaning": "앞으로",
+    "pos": "명사"
+  },
+  {
+    "word": "怖い",
+    "reading": "こわい",
+    "meaning": "무서운",
+    "pos": "い형용사"
+  },
+  {
+    "word": "壊す",
+    "reading": "こわす",
+    "meaning": "부수다",
+    "pos": "동사"
+  },
+  {
+    "word": "壊れる",
+    "reading": "こわれる",
+    "meaning": "깨지다",
+    "pos": "동사"
+  },
+  {
+    "word": "今度",
+    "reading": "こんど",
+    "meaning": "이번",
+    "pos": "명사"
+  },
+  {
+    "word": "今夜",
+    "reading": "こんや",
+    "meaning": "오늘 밤",
+    "pos": "명사"
+  },
+  {
+    "word": "ご主人",
+    "reading": "ごしゅじん",
+    "meaning": "남편분",
+    "pos": "명사"
+  },
+  {
+    "word": "ご存じ",
+    "reading": "ごぞんじ",
+    "meaning": "알고 계심",
+    "pos": "명사"
+  },
+  {
+    "word": "ごちそう",
+    "reading": "ごちそう",
+    "meaning": "잔치",
+    "pos": "명사"
+  },
+  {
+    "word": "ごみ",
+    "reading": "ごみ",
+    "meaning": "쓰레기",
+    "pos": "명사"
+  },
+  {
+    "word": "ごらんになる",
+    "reading": "ごらんになる",
+    "meaning": "보시다",
+    "pos": "동사"
+  },
+  {
+    "word": "御～",
+    "reading": "ご～",
+    "meaning": "존경 접두사",
+    "pos": "접사"
+  },
+  {
+    "word": "最近",
+    "reading": "さいきん",
+    "meaning": "최근",
+    "pos": "명사"
+  },
+  {
+    "word": "最後",
+    "reading": "さいご",
+    "meaning": "마지막",
+    "pos": "명사"
+  },
+  {
+    "word": "最初",
+    "reading": "さいしょ",
+    "meaning": "처음",
+    "pos": "명사"
+  },
+  {
+    "word": "坂",
+    "reading": "さか",
+    "meaning": "비탈길",
+    "pos": "명사"
+  },
+  {
+    "word": "盛ん",
+    "reading": "さかん",
+    "meaning": "활발",
+    "pos": "な형용사"
+  },
+  {
+    "word": "探す",
+    "reading": "さがす",
+    "meaning": "찾다",
+    "pos": "동사"
+  },
+  {
+    "word": "下る",
+    "reading": "さがる",
+    "meaning": "내려가다",
+    "pos": "동사"
+  },
+  {
+    "word": "下げる",
+    "reading": "さげる",
+    "meaning": "내리다",
+    "pos": "동사"
+  },
+  {
+    "word": "差し上げる",
+    "reading": "さしあげる",
+    "meaning": "드리다",
+    "pos": "동사"
+  },
+  {
+    "word": "さっき",
+    "reading": "さっき",
+    "meaning": "아까",
+    "pos": "명사"
+  },
+  {
+    "word": "寂しい",
+    "reading": "さびしい",
+    "meaning": "외로운",
+    "pos": "い형용사"
+  },
+  {
+    "word": "さ来月",
+    "reading": "さらいげつ",
+    "meaning": "다음 달",
+    "pos": "명사"
+  },
+  {
+    "word": "再来月",
+    "reading": "さらいげつ",
+    "meaning": "다다음 달",
+    "pos": "명사"
+  },
+  {
+    "word": "さ来週",
+    "reading": "さらいしゅう",
+    "meaning": "다음주",
+    "pos": "명사"
+  },
+  {
+    "word": "再来週",
+    "reading": "さらいしゅう",
+    "meaning": "다다음 주",
+    "pos": "명사"
+  },
+  {
+    "word": "騒ぐ",
+    "reading": "さわぐ",
+    "meaning": "떠들다",
+    "pos": "동사"
+  },
+  {
+    "word": "触る",
+    "reading": "さわる",
+    "meaning": "만지다",
+    "pos": "동사"
+  },
+  {
+    "word": "産業",
+    "reading": "さんぎょう",
+    "meaning": "산업",
+    "pos": "명사"
+  },
+  {
+    "word": "残念",
+    "reading": "ざんねん",
+    "meaning": "유감",
+    "pos": "な형용사"
+  },
+  {
+    "word": "市",
+    "reading": "し",
+    "meaning": "도시",
+    "pos": "명사"
+  },
+  {
+    "word": "試合",
+    "reading": "しあい",
+    "meaning": "시합",
+    "pos": "명사"
+  },
+  {
+    "word": "仕方",
+    "reading": "しかた",
+    "meaning": "방법",
+    "pos": "명사"
+  },
+  {
+    "word": "しかる",
+    "reading": "しかる",
+    "meaning": "꾸짖다",
+    "pos": "동사"
+  },
+  {
+    "word": "叱る",
+    "reading": "しかる",
+    "meaning": "꾸짖다",
+    "pos": "동사"
+  },
+  {
+    "word": "試験",
+    "reading": "しけん",
+    "meaning": "시험",
+    "pos": "명사"
+  },
+  {
+    "word": "下着",
+    "reading": "したぎ",
+    "meaning": "속옷",
+    "pos": "명사"
+  },
+  {
+    "word": "支度",
+    "reading": "したく",
+    "meaning": "준비",
+    "pos": "명사"
+  },
+  {
+    "word": "しっかり",
+    "reading": "しっかり",
+    "meaning": "제대로",
+    "pos": "부사"
+  },
+  {
+    "word": "失敗",
+    "reading": "しっぱい",
+    "meaning": "실패",
+    "pos": "명사"
+  },
+  {
+    "word": "失礼",
+    "reading": "しつれい",
+    "meaning": "실례",
+    "pos": "な형용사"
+  },
+  {
+    "word": "品物",
+    "reading": "しなもの",
+    "meaning": "물건",
+    "pos": "명사"
+  },
+  {
+    "word": "しばらく",
+    "reading": "しばらく",
+    "meaning": "잠깐",
+    "pos": "명사"
+  },
+  {
+    "word": "島",
+    "reading": "しま",
+    "meaning": "섬",
+    "pos": "명사"
+  },
+  {
+    "word": "市民",
+    "reading": "しみん",
+    "meaning": "시민",
+    "pos": "명사"
+  },
+  {
+    "word": "社会",
+    "reading": "しゃかい",
+    "meaning": "사회",
+    "pos": "명사"
+  },
+  {
+    "word": "社長",
+    "reading": "しゃちょう",
+    "meaning": "사장",
+    "pos": "명사"
+  },
+  {
+    "word": "習慣",
+    "reading": "しゅうかん",
+    "meaning": "습관",
+    "pos": "명사"
+  },
+  {
+    "word": "出席",
+    "reading": "しゅっせき",
+    "meaning": "출석",
+    "pos": "명사"
+  },
+  {
+    "word": "出席する",
+    "reading": "しゅっせきする",
+    "meaning": "참석하다",
+    "pos": "동사"
+  },
+  {
+    "word": "出発",
+    "reading": "しゅっぱつ",
+    "meaning": "출발",
+    "pos": "명사"
+  },
+  {
+    "word": "趣味",
+    "reading": "しゅみ",
+    "meaning": "취미",
+    "pos": "명사"
+  },
+  {
+    "word": "紹介",
+    "reading": "しょうかい",
+    "meaning": "소개",
+    "pos": "명사"
+  },
+  {
+    "word": "小学校",
+    "reading": "しょうがっこう",
+    "meaning": "초등학교",
+    "pos": "명사"
+  },
+  {
+    "word": "正月",
+    "reading": "しょうがつ",
+    "meaning": "정월, 새해",
+    "pos": "명사"
+  },
+  {
+    "word": "小説",
+    "reading": "しょうせつ",
+    "meaning": "소설",
+    "pos": "명사"
+  },
+  {
+    "word": "招待",
+    "reading": "しょうたい",
+    "meaning": "초대",
+    "pos": "명사"
+  },
+  {
+    "word": "招待する",
+    "reading": "しょうたいする",
+    "meaning": "초대하다",
+    "pos": "동사"
+  },
+  {
+    "word": "承知",
+    "reading": "しょうち",
+    "meaning": "알아들음, 승낙",
+    "pos": "명사"
+  },
+  {
+    "word": "将来",
+    "reading": "しょうらい",
+    "meaning": "장래",
+    "pos": "명사"
+  },
+  {
+    "word": "食事",
+    "reading": "しょくじ",
+    "meaning": "식사",
+    "pos": "명사"
+  },
+  {
+    "word": "食事する",
+    "reading": "しょくじする",
+    "meaning": "식사하다",
+    "pos": "동사"
+  },
+  {
+    "word": "食料品",
+    "reading": "しょくりょうひん",
+    "meaning": "식료품",
+    "pos": "명사"
+  },
+  {
+    "word": "知らせる",
+    "reading": "しらせる",
+    "meaning": "알리다",
+    "pos": "동사"
+  },
+  {
+    "word": "調べる",
+    "reading": "しらべる",
+    "meaning": "조사하다",
+    "pos": "동사"
+  },
+  {
+    "word": "親切",
+    "reading": "しんせつ",
+    "meaning": "친절",
+    "pos": "な형용사"
+  },
+  {
+    "word": "心配",
+    "reading": "しんぱい",
+    "meaning": "걱정",
+    "pos": "명사"
+  },
+  {
+    "word": "新聞社",
+    "reading": "しんぶんしゃ",
+    "meaning": "신문사",
+    "pos": "명사"
+  },
+  {
+    "word": "字",
+    "reading": "じ",
+    "meaning": "글자",
+    "pos": "명사"
+  },
+  {
+    "word": "事故",
+    "reading": "じこ",
+    "meaning": "사고",
+    "pos": "명사"
+  },
+  {
+    "word": "地震",
+    "reading": "じしん",
+    "meaning": "지진",
+    "pos": "명사"
+  },
+  {
+    "word": "時代",
+    "reading": "じだい",
+    "meaning": "시대",
+    "pos": "명사"
+  },
+  {
+    "word": "辞典",
+    "reading": "じてん",
+    "meaning": "사전",
+    "pos": "명사"
+  },
+  {
+    "word": "事務所",
+    "reading": "じむしょ",
+    "meaning": "사무실",
+    "pos": "명사"
+  },
+  {
+    "word": "じゃま",
+    "reading": "じゃま",
+    "meaning": "방해",
+    "pos": "명사"
+  },
+  {
+    "word": "邪魔",
+    "reading": "じゃま",
+    "meaning": "방해",
+    "pos": "명사"
+  },
+  {
+    "word": "住所",
+    "reading": "じゅうしょ",
+    "meaning": "주소",
+    "pos": "명사"
+  },
+  {
+    "word": "柔道",
+    "reading": "じゅうどう",
+    "meaning": "유도",
+    "pos": "명사"
+  },
+  {
+    "word": "十分",
+    "reading": "じゅうぶん",
+    "meaning": "충분히",
+    "pos": "な형용사"
+  },
+  {
+    "word": "準備",
+    "reading": "じゅんび",
+    "meaning": "준비",
+    "pos": "명사"
+  },
+  {
+    "word": "自由",
+    "reading": "じゆう",
+    "meaning": "자유",
+    "pos": "な형용사"
+  },
+  {
+    "word": "女性",
+    "reading": "じょせい",
+    "meaning": "여성",
+    "pos": "명사"
+  },
+  {
+    "word": "人口",
+    "reading": "じんこう",
+    "meaning": "인구",
+    "pos": "명사"
+  },
+  {
+    "word": "神社",
+    "reading": "じんじゃ",
+    "meaning": "신사",
+    "pos": "명사"
+  },
+  {
+    "word": "水泳",
+    "reading": "すいえい",
+    "meaning": "수영",
+    "pos": "명사"
+  },
+  {
+    "word": "水道",
+    "reading": "すいどう",
+    "meaning": "수도",
+    "pos": "명사"
+  },
+  {
+    "word": "数学",
+    "reading": "すうがく",
+    "meaning": "수학",
+    "pos": "명사"
+  },
+  {
+    "word": "過ぎる",
+    "reading": "すぎる",
+    "meaning": "지나다",
+    "pos": "동사"
+  },
+  {
+    "word": "空く",
+    "reading": "すく",
+    "meaning": "비우다",
+    "pos": "동사"
+  },
+  {
+    "word": "すく",
+    "reading": "すく",
+    "meaning": "속이 비다",
+    "pos": "동사"
+  },
+  {
+    "word": "凄い",
+    "reading": "すごい",
+    "meaning": "굉장한",
+    "pos": "い형용사"
+  },
+  {
+    "word": "進む",
+    "reading": "すすむ",
+    "meaning": "진행하다",
+    "pos": "동사"
+  },
+  {
+    "word": "すっかり",
+    "reading": "すっかり",
+    "meaning": "완전히",
+    "pos": "부사"
+  },
+  {
+    "word": "すっと",
+    "reading": "すっと",
+    "meaning": "갑자기",
+    "pos": "부사"
+  },
+  {
+    "word": "捨てる",
+    "reading": "すてる",
+    "meaning": "버리다",
+    "pos": "동사"
+  },
+  {
+    "word": "砂",
+    "reading": "すな",
+    "meaning": "모래",
+    "pos": "명사"
+  },
+  {
+    "word": "すばらしい",
+    "reading": "すばらしい",
+    "meaning": "훌륭한",
+    "pos": "い형용사"
+  },
+  {
+    "word": "素晴らしい",
+    "reading": "すばらしい",
+    "meaning": "멋진",
+    "pos": "い형용사"
+  },
+  {
+    "word": "滑る",
+    "reading": "すべる",
+    "meaning": "미끄러지다",
+    "pos": "동사"
+  },
+  {
+    "word": "隅",
+    "reading": "すみ",
+    "meaning": "모서리",
+    "pos": "명사"
+  },
+  {
+    "word": "済む",
+    "reading": "すむ",
+    "meaning": "끝나다",
+    "pos": "동사"
+  },
+  {
+    "word": "すり",
+    "reading": "すり",
+    "meaning": "소매치기",
+    "pos": "명사"
+  },
+  {
+    "word": "すると",
+    "reading": "すると",
+    "meaning": "그러자",
+    "pos": "접속사"
+  },
+  {
+    "word": "ずいぶん",
+    "reading": "ずいぶん",
+    "meaning": "대단히",
+    "pos": "명사"
+  },
+  {
+    "word": "随分",
+    "reading": "ずいぶん",
+    "meaning": "꽤, 상당히",
+    "pos": "명사"
+  },
+  {
+    "word": "生活",
+    "reading": "せいかつ",
+    "meaning": "생활",
+    "pos": "명사"
+  },
+  {
+    "word": "生活する",
+    "reading": "せいかつする",
+    "meaning": "생활하다",
+    "pos": "동사"
+  },
+  {
+    "word": "生産",
+    "reading": "せいさん",
+    "meaning": "생산",
+    "pos": "명사"
+  },
+  {
+    "word": "生産する",
+    "reading": "せいさんする",
+    "meaning": "생산하다",
+    "pos": "동사"
+  },
+  {
+    "word": "政治",
+    "reading": "せいじ",
+    "meaning": "정치",
+    "pos": "명사"
+  },
+  {
+    "word": "西洋",
+    "reading": "せいよう",
+    "meaning": "서양",
+    "pos": "명사"
+  },
+  {
+    "word": "世界",
+    "reading": "せかい",
+    "meaning": "세계",
+    "pos": "명사"
+  },
+  {
+    "word": "席",
+    "reading": "せき",
+    "meaning": "좌석",
+    "pos": "명사"
+  },
+  {
+    "word": "説明",
+    "reading": "せつめい",
+    "meaning": "설명",
+    "pos": "명사"
+  },
+  {
+    "word": "背中",
+    "reading": "せなか",
+    "meaning": "등",
+    "pos": "명사"
+  },
+  {
+    "word": "世話",
+    "reading": "せわ",
+    "meaning": "돌봄",
+    "pos": "명사"
+  },
+  {
+    "word": "世話する",
+    "reading": "せわする",
+    "meaning": "돌보다",
+    "pos": "동사"
+  },
+  {
+    "word": "線",
+    "reading": "せん",
+    "meaning": "선",
+    "pos": "명사"
+  },
+  {
+    "word": "戦争",
+    "reading": "せんそう",
+    "meaning": "전쟁",
+    "pos": "명사"
+  },
+  {
+    "word": "先輩",
+    "reading": "せんぱい",
+    "meaning": "선배",
+    "pos": "명사"
+  },
+  {
+    "word": "専門",
+    "reading": "せんもん",
+    "meaning": "전문",
+    "pos": "명사"
+  },
+  {
+    "word": "ぜひ",
+    "reading": "ぜひ",
+    "meaning": "꼭",
+    "pos": "부사"
+  },
+  {
+    "word": "是非",
+    "reading": "ぜひ",
+    "meaning": "꼭",
+    "pos": "명사"
+  },
+  {
+    "word": "ぜんぜん",
+    "reading": "ぜんぜん",
+    "meaning": "전혀",
+    "pos": "부사"
+  },
+  {
+    "word": "全然",
+    "reading": "ぜんぜん",
+    "meaning": "전혀",
+    "pos": "부사"
+  },
+  {
+    "word": "相談",
+    "reading": "そうだん",
+    "meaning": "상담",
+    "pos": "명사"
+  },
+  {
+    "word": "相談する",
+    "reading": "そうだんする",
+    "meaning": "상담하다",
+    "pos": "동사"
+  },
+  {
+    "word": "育てる",
+    "reading": "そだてる",
+    "meaning": "육성하다",
+    "pos": "동사"
+  },
+  {
+    "word": "卒業",
+    "reading": "そつぎょう",
+    "meaning": "졸업",
+    "pos": "명사"
+  },
+  {
+    "word": "祖父",
+    "reading": "そふ",
+    "meaning": "할아버지",
+    "pos": "명사"
+  },
+  {
+    "word": "祖母",
+    "reading": "そぼ",
+    "meaning": "할머니",
+    "pos": "명사"
+  },
+  {
+    "word": "それで",
+    "reading": "それで",
+    "meaning": "그래서",
+    "pos": "접속사"
+  },
+  {
+    "word": "それに",
+    "reading": "それに",
+    "meaning": "게다가",
+    "pos": "접속사"
+  },
+  {
+    "word": "それほど",
+    "reading": "それほど",
+    "meaning": "그 정도로",
+    "pos": "명사"
+  },
+  {
+    "word": "そろそろ",
+    "reading": "そろそろ",
+    "meaning": "슬슬",
+    "pos": "명사"
+  },
+  {
+    "word": "そんな",
+    "reading": "そんな",
+    "meaning": "그런",
+    "pos": "명사"
+  },
+  {
+    "word": "そんなに",
+    "reading": "そんなに",
+    "meaning": "그렇게",
+    "pos": "명사"
+  },
+  {
+    "word": "退院",
+    "reading": "たいいん",
+    "meaning": "퇴원",
+    "pos": "명사"
+  },
+  {
+    "word": "たいてい",
+    "reading": "たいてい",
+    "meaning": "대부분",
+    "pos": "부사"
+  },
+  {
+    "word": "大抵",
+    "reading": "たいてい",
+    "meaning": "대개",
+    "pos": "부사"
+  },
+  {
+    "word": "台風",
+    "reading": "たいふう",
+    "meaning": "태풍",
+    "pos": "명사"
+  },
+  {
+    "word": "倒れる",
+    "reading": "たおれる",
+    "meaning": "쓰러지다",
+    "pos": "동사"
+  },
+  {
+    "word": "確か",
+    "reading": "たしか",
+    "meaning": "확실함",
+    "pos": "な형용사"
+  },
+  {
+    "word": "足す",
+    "reading": "たす",
+    "meaning": "더하다",
+    "pos": "동사"
+  },
+  {
+    "word": "訪ねる",
+    "reading": "たずねる",
+    "meaning": "방문하다",
+    "pos": "동사"
+  },
+  {
+    "word": "尋ねる",
+    "reading": "たずねる",
+    "meaning": "묻다",
+    "pos": "동사"
+  },
+  {
+    "word": "畳",
+    "reading": "たたみ",
+    "meaning": "다다미",
+    "pos": "명사"
+  },
+  {
+    "word": "正しい",
+    "reading": "ただしい",
+    "meaning": "올바른",
+    "pos": "い형용사"
+  },
+  {
+    "word": "立てる",
+    "reading": "たてる",
+    "meaning": "세우다",
+    "pos": "동사"
+  },
+  {
+    "word": "建てる",
+    "reading": "たてる",
+    "meaning": "짓다",
+    "pos": "동사"
+  },
+  {
+    "word": "例えば",
+    "reading": "たとえば",
+    "meaning": "예를 들어",
+    "pos": "명사"
+  },
+  {
+    "word": "棚",
+    "reading": "たな",
+    "meaning": "선반",
+    "pos": "명사"
+  },
+  {
+    "word": "楽しみ",
+    "reading": "たのしみ",
+    "meaning": "즐거움",
+    "pos": "명사"
+  },
+  {
+    "word": "楽む",
+    "reading": "たのしむ",
+    "meaning": "즐기다",
+    "pos": "동사"
+  },
+  {
+    "word": "たまに",
+    "reading": "たまに",
+    "meaning": "가끔",
+    "pos": "부사"
+  },
+  {
+    "word": "為",
+    "reading": "ため",
+    "meaning": "위해",
+    "pos": "명사"
+  },
+  {
+    "word": "足りる",
+    "reading": "たりる",
+    "meaning": "충분하다",
+    "pos": "동사"
+  },
+  {
+    "word": "大学生",
+    "reading": "だいがくせい",
+    "meaning": "대학생",
+    "pos": "명사"
+  },
+  {
+    "word": "大事",
+    "reading": "だいじ",
+    "meaning": "중요",
+    "pos": "명사"
+  },
+  {
+    "word": "大体",
+    "reading": "だいたい",
+    "meaning": "대략",
+    "pos": "명사"
+  },
+  {
+    "word": "大分",
+    "reading": "だいぶ",
+    "meaning": "상당히",
+    "pos": "명사"
+  },
+  {
+    "word": "だから",
+    "reading": "だから",
+    "meaning": "그래서",
+    "pos": "접속사"
+  },
+  {
+    "word": "だめ",
+    "reading": "だめ",
+    "meaning": "안돼",
+    "pos": "명사"
+  },
+  {
+    "word": "男性",
+    "reading": "だんせい",
+    "meaning": "남성",
+    "pos": "명사"
+  },
+  {
+    "word": "暖房",
+    "reading": "だんぼう",
+    "meaning": "난방",
+    "pos": "명사"
+  },
+  {
+    "word": "血",
+    "reading": "ち",
+    "meaning": "피",
+    "pos": "명사"
+  },
+  {
+    "word": "力",
+    "reading": "ちから",
+    "meaning": "힘",
+    "pos": "명사"
+  },
+  {
+    "word": "ちっとも",
+    "reading": "ちっとも",
+    "meaning": "조금도",
+    "pos": "명사"
+  },
+  {
+    "word": "ちゃん",
+    "reading": "ちゃん",
+    "meaning": "여성 호칭",
+    "pos": "명사"
+  },
+  {
+    "word": "注意",
+    "reading": "ちゅうい",
+    "meaning": "주의",
+    "pos": "명사"
+  },
+  {
+    "word": "中学校",
+    "reading": "ちゅうがっこう",
+    "meaning": "중학교",
+    "pos": "명사"
+  },
+  {
+    "word": "注射",
+    "reading": "ちゅうしゃ",
+    "meaning": "주사",
+    "pos": "명사"
+  },
+  {
+    "word": "駐車場",
+    "reading": "ちゅうしゃじょう",
+    "meaning": "주차장",
+    "pos": "명사"
+  },
+  {
+    "word": "地理",
+    "reading": "ちり",
+    "meaning": "지리",
+    "pos": "명사"
+  },
+  {
+    "word": "捕まえる",
+    "reading": "つかまえる",
+    "meaning": "붙잡다",
+    "pos": "동사"
+  },
+  {
+    "word": "つき",
+    "reading": "つき",
+    "meaning": "달",
+    "pos": "명사"
+  },
+  {
+    "word": "月",
+    "reading": "つき",
+    "meaning": "달",
+    "pos": "명사"
+  },
+  {
+    "word": "付く",
+    "reading": "つく",
+    "meaning": "달라붙다",
+    "pos": "동사"
+  },
+  {
+    "word": "点く",
+    "reading": "つく",
+    "meaning": "켜지다",
+    "pos": "동사"
+  },
+  {
+    "word": "漬ける",
+    "reading": "つける",
+    "meaning": "담그다",
+    "pos": "동사"
+  },
+  {
+    "word": "都合",
+    "reading": "つごう",
+    "meaning": "사정",
+    "pos": "명사"
+  },
+  {
+    "word": "伝える",
+    "reading": "つたえる",
+    "meaning": "전하다",
+    "pos": "동사"
+  },
+  {
+    "word": "包む",
+    "reading": "つつむ",
+    "meaning": "싸다",
+    "pos": "동사"
+  },
+  {
+    "word": "続く",
+    "reading": "つづく",
+    "meaning": "계속되다",
+    "pos": "동사"
+  },
+  {
+    "word": "続ける",
+    "reading": "つづける",
+    "meaning": "계속하다",
+    "pos": "동사"
+  },
+  {
+    "word": "妻",
+    "reading": "つま",
+    "meaning": "아내",
+    "pos": "명사"
+  },
+  {
+    "word": "つもり",
+    "reading": "つもり",
+    "meaning": "의도",
+    "pos": "명사"
+  },
+  {
+    "word": "釣る",
+    "reading": "つる",
+    "meaning": "낚다",
+    "pos": "동사"
+  },
+  {
+    "word": "連れる",
+    "reading": "つれる",
+    "meaning": "동행하다",
+    "pos": "동사"
+  },
+  {
+    "word": "丁寧",
+    "reading": "ていねい",
+    "meaning": "친절",
+    "pos": "な형용사"
+  },
+  {
+    "word": "適当",
+    "reading": "てきとう",
+    "meaning": "적당",
+    "pos": "명사"
+  },
+  {
+    "word": "手伝う",
+    "reading": "てつだう",
+    "meaning": "돕다",
+    "pos": "동사"
+  },
+  {
+    "word": "手袋",
+    "reading": "てぶくろ",
+    "meaning": "장갑",
+    "pos": "명사"
+  },
+  {
+    "word": "寺",
+    "reading": "てら",
+    "meaning": "사원",
+    "pos": "명사"
+  },
+  {
+    "word": "点",
+    "reading": "てん",
+    "meaning": "점",
+    "pos": "명사"
+  },
+  {
+    "word": "店員",
+    "reading": "てんいん",
+    "meaning": "점원",
+    "pos": "명사"
+  },
+  {
+    "word": "天気予報",
+    "reading": "てんきよほう",
+    "meaning": "날씨 예보",
+    "pos": "명사"
+  },
+  {
+    "word": "展覧会",
+    "reading": "てんらんかい",
+    "meaning": "전시회",
+    "pos": "명사"
+  },
+  {
+    "word": "できるだけ",
+    "reading": "できるだけ",
+    "meaning": "가능한 한 많이",
+    "pos": "부사"
+  },
+  {
+    "word": "電灯",
+    "reading": "でんとう",
+    "meaning": "전등",
+    "pos": "명사"
+  },
+  {
+    "word": "電報",
+    "reading": "でんぽう",
+    "meaning": "전보",
+    "pos": "명사"
+  },
+  {
+    "word": "都",
+    "reading": "と",
+    "meaning": "도시",
+    "pos": "명사"
+  },
+  {
+    "word": "とうとう",
+    "reading": "とうとう",
+    "meaning": "드디어",
+    "pos": "명사"
+  },
+  {
+    "word": "遠く",
+    "reading": "とおく",
+    "meaning": "먼",
+    "pos": "동사"
+  },
+  {
+    "word": "通り",
+    "reading": "とおり",
+    "meaning": "거리, 대로",
+    "pos": "명사"
+  },
+  {
+    "word": "通る",
+    "reading": "とおる",
+    "meaning": "지나다",
+    "pos": "동사"
+  },
+  {
+    "word": "特に",
+    "reading": "とくに",
+    "meaning": "특히",
+    "pos": "명사"
+  },
+  {
+    "word": "特別",
+    "reading": "とくべつ",
+    "meaning": "특별",
+    "pos": "な형용사"
+  },
+  {
+    "word": "とこや",
+    "reading": "とこや",
+    "meaning": "이발사",
+    "pos": "명사"
+  },
+  {
+    "word": "床屋",
+    "reading": "とこや",
+    "meaning": "이발소",
+    "pos": "명사"
+  },
+  {
+    "word": "途中",
+    "reading": "とちゅう",
+    "meaning": "도중",
+    "pos": "명사"
+  },
+  {
+    "word": "特急",
+    "reading": "とっきゅう",
+    "meaning": "특급",
+    "pos": "명사"
+  },
+  {
+    "word": "届ける",
+    "reading": "とどける",
+    "meaning": "닿다",
+    "pos": "동사"
+  },
+  {
+    "word": "泊まる",
+    "reading": "とまる",
+    "meaning": "머물다",
+    "pos": "동사"
+  },
+  {
+    "word": "止める",
+    "reading": "とめる",
+    "meaning": "중지하다",
+    "pos": "동사"
+  },
+  {
+    "word": "取り替える",
+    "reading": "とりかえる",
+    "meaning": "바꾸다",
+    "pos": "동사"
+  },
+  {
+    "word": "道具",
+    "reading": "どうぐ",
+    "meaning": "도구",
+    "pos": "명사"
+  },
+  {
+    "word": "動物園",
+    "reading": "どうぶつえん",
+    "meaning": "동물원",
+    "pos": "명사"
+  },
+  {
+    "word": "泥棒",
+    "reading": "どろぼう",
+    "meaning": "도둑",
+    "pos": "명사"
+  },
+  {
+    "word": "どんどん",
+    "reading": "どんどん",
+    "meaning": "점점",
+    "pos": "부사"
+  },
+  {
+    "word": "直す",
+    "reading": "なおす",
+    "meaning": "고치다",
+    "pos": "동사"
+  },
+  {
+    "word": "直る",
+    "reading": "なおる",
+    "meaning": "고쳐지다",
+    "pos": "동사"
+  },
+  {
+    "word": "治る",
+    "reading": "なおる",
+    "meaning": "낫다",
+    "pos": "동사"
+  },
+  {
+    "word": "中々",
+    "reading": "なかなか",
+    "meaning": "꽤",
+    "pos": "명사"
+  },
+  {
+    "word": "泣く",
+    "reading": "なく",
+    "meaning": "울다",
+    "pos": "동사"
+  },
+  {
+    "word": "無くなる",
+    "reading": "なくなる",
+    "meaning": "없어지다",
+    "pos": "동사"
+  },
+  {
+    "word": "亡くなる",
+    "reading": "なくなる",
+    "meaning": "죽다",
+    "pos": "동사"
+  },
+  {
+    "word": "投げる",
+    "reading": "なげる",
+    "meaning": "던지다",
+    "pos": "동사"
+  },
+  {
+    "word": "なさる",
+    "reading": "なさる",
+    "meaning": "하시다",
+    "pos": "동사"
+  },
+  {
+    "word": "鳴る",
+    "reading": "なる",
+    "meaning": "울리다",
+    "pos": "동사"
+  },
+  {
+    "word": "なるべく",
+    "reading": "なるべく",
+    "meaning": "가급적",
+    "pos": "부사"
+  },
+  {
+    "word": "なるほど",
+    "reading": "なるほど",
+    "meaning": "과연",
+    "pos": "부사"
+  },
+  {
+    "word": "慣れる",
+    "reading": "なれる",
+    "meaning": "익숙해지다",
+    "pos": "동사"
+  },
+  {
+    "word": "におい",
+    "reading": "におい",
+    "meaning": "냄새",
+    "pos": "명사"
+  },
+  {
+    "word": "匂い",
+    "reading": "におい",
+    "meaning": "냄새",
+    "pos": "명사"
+  },
+  {
+    "word": "二階建て",
+    "reading": "にかいだて",
+    "meaning": "이층",
+    "pos": "명사"
+  },
+  {
+    "word": "苦い",
+    "reading": "にがい",
+    "meaning": "쓴",
+    "pos": "い형용사"
+  },
+  {
+    "word": "逃げる",
+    "reading": "にげる",
+    "meaning": "도망치다",
+    "pos": "동사"
+  },
+  {
+    "word": "日記",
+    "reading": "にっき",
+    "meaning": "일기",
+    "pos": "명사"
+  },
+  {
+    "word": "入院",
+    "reading": "にゅういん",
+    "meaning": "입원",
+    "pos": "명사"
+  },
+  {
+    "word": "入学",
+    "reading": "にゅうがく",
+    "meaning": "입학",
+    "pos": "명사"
+  },
+  {
+    "word": "入学する",
+    "reading": "にゅうがくする",
+    "meaning": "입학하다",
+    "pos": "동사"
+  },
+  {
+    "word": "似る",
+    "reading": "にる",
+    "meaning": "비슷하다",
+    "pos": "동사"
+  },
+  {
+    "word": "人形",
+    "reading": "にんぎょう",
+    "meaning": "인형",
+    "pos": "명사"
+  },
+  {
+    "word": "盗む",
+    "reading": "ぬすむ",
+    "meaning": "훔치다",
+    "pos": "동사"
+  },
+  {
+    "word": "塗る",
+    "reading": "ぬる",
+    "meaning": "바르다",
+    "pos": "동사"
+  },
+  {
+    "word": "ぬれる",
+    "reading": "ぬれる",
+    "meaning": "젖다",
+    "pos": "동사"
+  },
+  {
+    "word": "濡れる",
+    "reading": "ぬれる",
+    "meaning": "젖다",
+    "pos": "동사"
+  },
+  {
+    "word": "ねだん",
+    "reading": "ねだん",
+    "meaning": "가격",
+    "pos": "명사"
+  },
+  {
+    "word": "値段",
+    "reading": "ねだん",
+    "meaning": "가격",
+    "pos": "명사"
+  },
+  {
+    "word": "ねっしん",
+    "reading": "ねっしん",
+    "meaning": "열심",
+    "pos": "명사"
+  },
+  {
+    "word": "熱心",
+    "reading": "ねっしん",
+    "meaning": "열심",
+    "pos": "な형용사"
+  },
+  {
+    "word": "熱",
+    "reading": "ねつ",
+    "meaning": "열",
+    "pos": "명사"
+  },
+  {
+    "word": "寝坊",
+    "reading": "ねぼう",
+    "meaning": "늦잠",
+    "pos": "명사"
+  },
+  {
+    "word": "眠い",
+    "reading": "ねむい",
+    "meaning": "졸린",
+    "pos": "い형용사"
+  },
+  {
+    "word": "眠る",
+    "reading": "ねむる",
+    "meaning": "자다",
+    "pos": "동사"
+  },
+  {
+    "word": "残る",
+    "reading": "のこる",
+    "meaning": "남다",
+    "pos": "동사"
+  },
+  {
+    "word": "のど",
+    "reading": "のど",
+    "meaning": "목",
+    "pos": "명사"
+  },
+  {
+    "word": "喉",
+    "reading": "のど",
+    "meaning": "목구멍",
+    "pos": "명사"
+  },
+  {
+    "word": "乗り換える",
+    "reading": "のりかえる",
+    "meaning": "환승하다",
+    "pos": "동사"
+  },
+  {
+    "word": "乗り物",
+    "reading": "のりもの",
+    "meaning": "놀이기구",
+    "pos": "명사"
+  },
+  {
+    "word": "葉",
+    "reading": "は",
+    "meaning": "잎",
+    "pos": "명사"
+  },
+  {
+    "word": "拝見",
+    "reading": "はいけん",
+    "meaning": "봄(겸양)",
+    "pos": "명사"
+  },
+  {
+    "word": "歯医者",
+    "reading": "はいしゃ",
+    "meaning": "치과",
+    "pos": "명사"
+  },
+  {
+    "word": "運ぶ",
+    "reading": "はこぶ",
+    "meaning": "운반하다",
+    "pos": "동사"
+  },
+  {
+    "word": "始める",
+    "reading": "はじめる",
+    "meaning": "시작하다",
+    "pos": "동사"
+  },
+  {
+    "word": "はず",
+    "reading": "はず",
+    "meaning": "할 것",
+    "pos": "명사"
+  },
+  {
+    "word": "恥ずかしい",
+    "reading": "はずかしい",
+    "meaning": "부끄러운",
+    "pos": "い형용사"
+  },
+  {
+    "word": "はっきり",
+    "reading": "はっきり",
+    "meaning": "분명히",
+    "pos": "부사"
+  },
+  {
+    "word": "発音",
+    "reading": "はつおん",
+    "meaning": "발음",
+    "pos": "명사"
+  },
+  {
+    "word": "花見",
+    "reading": "はなみ",
+    "meaning": "꽃놀이",
+    "pos": "명사"
+  },
+  {
+    "word": "林",
+    "reading": "はやし",
+    "meaning": "숲",
+    "pos": "명사"
+  },
+  {
+    "word": "払う",
+    "reading": "はらう",
+    "meaning": "지불하다",
+    "pos": "동사"
+  },
+  {
+    "word": "反対",
+    "reading": "はんたい",
+    "meaning": "반대",
+    "pos": "명사"
+  },
+  {
+    "word": "場合",
+    "reading": "ばあい",
+    "meaning": "경우",
+    "pos": "명사"
+  },
+  {
+    "word": "倍",
+    "reading": "ばい",
+    "meaning": "배",
+    "pos": "명사"
+  },
+  {
+    "word": "場所",
+    "reading": "ばしょ",
+    "meaning": "장소",
+    "pos": "명사"
+  },
+  {
+    "word": "番組",
+    "reading": "ばんぐみ",
+    "meaning": "프로그램",
+    "pos": "명사"
+  },
+  {
+    "word": "日",
+    "reading": "ひ",
+    "meaning": "일",
+    "pos": "명사"
+  },
+  {
+    "word": "火",
+    "reading": "ひ",
+    "meaning": "불",
+    "pos": "명사"
+  },
+  {
+    "word": "冷える",
+    "reading": "ひえる",
+    "meaning": "추워지다",
+    "pos": "동사"
+  },
+  {
+    "word": "光",
+    "reading": "ひかり",
+    "meaning": "빛",
+    "pos": "명사"
+  },
+  {
+    "word": "光る",
+    "reading": "ひかる",
+    "meaning": "빛나다",
+    "pos": "동사"
+  },
+  {
+    "word": "引き出し",
+    "reading": "ひきだし",
+    "meaning": "서랍",
+    "pos": "명사"
+  },
+  {
+    "word": "引き出す",
+    "reading": "ひきだす",
+    "meaning": "인출하다",
+    "pos": "동사"
+  },
+  {
+    "word": "ひげ",
+    "reading": "ひげ",
+    "meaning": "수염",
+    "pos": "명사"
+  },
+  {
+    "word": "飛行場",
+    "reading": "ひこうじょう",
+    "meaning": "비행장",
+    "pos": "명사"
+  },
+  {
+    "word": "久しぶり",
+    "reading": "ひさしぶり",
+    "meaning": "오랜만에",
+    "pos": "명사"
+  },
+  {
+    "word": "非常に",
+    "reading": "ひじょうに",
+    "meaning": "매우",
+    "pos": "명사"
+  },
+  {
+    "word": "引っ越す",
+    "reading": "ひっこす",
+    "meaning": "이사하다",
+    "pos": "동사"
+  },
+  {
+    "word": "必要",
+    "reading": "ひつよう",
+    "meaning": "필요",
+    "pos": "な형용사"
+  },
+  {
+    "word": "ひどい",
+    "reading": "ひどい",
+    "meaning": "심한",
+    "pos": "い형용사"
+  },
+  {
+    "word": "昼間",
+    "reading": "ひるま",
+    "meaning": "주간",
+    "pos": "명사"
+  },
+  {
+    "word": "昼休み",
+    "reading": "ひるやすみ",
+    "meaning": "점심 시간",
+    "pos": "명사"
+  },
+  {
+    "word": "拾う",
+    "reading": "ひろう",
+    "meaning": "골라내다",
+    "pos": "동사"
+  },
+  {
+    "word": "美術館",
+    "reading": "びじゅつかん",
+    "meaning": "미술관",
+    "pos": "명사"
+  },
+  {
+    "word": "びっくりする",
+    "reading": "びっくりする",
+    "meaning": "깜짝 놀라다",
+    "pos": "동사"
+  },
+  {
+    "word": "増える",
+    "reading": "ふえる",
+    "meaning": "증가하다",
+    "pos": "동사"
+  },
+  {
+    "word": "深い",
+    "reading": "ふかい",
+    "meaning": "깊은",
+    "pos": "い형용사"
+  },
+  {
+    "word": "複雑",
+    "reading": "ふくざつ",
+    "meaning": "복잡",
+    "pos": "명사"
+  },
+  {
+    "word": "復習",
+    "reading": "ふくしゅう",
+    "meaning": "복습",
+    "pos": "명사"
+  },
+  {
+    "word": "普通",
+    "reading": "ふつう",
+    "meaning": "보통",
+    "pos": "명사"
+  },
+  {
+    "word": "太る",
+    "reading": "ふとる",
+    "meaning": "살찌다",
+    "pos": "동사"
+  },
+  {
+    "word": "布団",
+    "reading": "ふとん",
+    "meaning": "이불",
+    "pos": "명사"
+  },
+  {
+    "word": "舟",
+    "reading": "ふね",
+    "meaning": "배",
+    "pos": "명사"
+  },
+  {
+    "word": "不便",
+    "reading": "ふべん",
+    "meaning": "불편",
+    "pos": "な형용사"
+  },
+  {
+    "word": "踏む",
+    "reading": "ふむ",
+    "meaning": "밟다",
+    "pos": "동사"
+  },
+  {
+    "word": "部長",
+    "reading": "ぶちょう",
+    "meaning": "부장",
+    "pos": "명사"
+  },
+  {
+    "word": "ぶどう",
+    "reading": "ぶどう",
+    "meaning": "포도",
+    "pos": "명사"
+  },
+  {
+    "word": "文化",
+    "reading": "ぶんか",
+    "meaning": "문화",
+    "pos": "명사"
+  },
+  {
+    "word": "文学",
+    "reading": "ぶんがく",
+    "meaning": "문학",
+    "pos": "명사"
+  },
+  {
+    "word": "文法",
+    "reading": "ぶんぽう",
+    "meaning": "문법",
+    "pos": "명사"
+  },
+  {
+    "word": "変",
+    "reading": "へん",
+    "meaning": "이상함",
+    "pos": "な형용사"
+  },
+  {
+    "word": "返事",
+    "reading": "へんじ",
+    "meaning": "답변",
+    "pos": "명사"
+  },
+  {
+    "word": "別",
+    "reading": "べつ",
+    "meaning": "차이",
+    "pos": "명사"
+  },
+  {
+    "word": "放送",
+    "reading": "ほうそう",
+    "meaning": "방송",
+    "pos": "명사"
+  },
+  {
+    "word": "法律",
+    "reading": "ほうりつ",
+    "meaning": "법률",
+    "pos": "명사"
+  },
+  {
+    "word": "星",
+    "reading": "ほし",
+    "meaning": "별",
+    "pos": "명사"
+  },
+  {
+    "word": "ほとんど",
+    "reading": "ほとんど",
+    "meaning": "대부분",
+    "pos": "명사"
+  },
+  {
+    "word": "ほど",
+    "reading": "ほど",
+    "meaning": "정도",
+    "pos": "명사"
+  },
+  {
+    "word": "程",
+    "reading": "ほど",
+    "meaning": "정도",
+    "pos": "명사"
+  },
+  {
+    "word": "ほめる",
+    "reading": "ほめる",
+    "meaning": "칭찬하다",
+    "pos": "동사"
+  },
+  {
+    "word": "褒める",
+    "reading": "ほめる",
+    "meaning": "칭찬하다",
+    "pos": "동사"
+  },
+  {
+    "word": "翻訳",
+    "reading": "ほんやく",
+    "meaning": "번역",
+    "pos": "명사"
+  },
+  {
+    "word": "貿易",
+    "reading": "ぼうえき",
+    "meaning": "무역",
+    "pos": "명사"
+  },
+  {
+    "word": "僕",
+    "reading": "ぼく",
+    "meaning": "나",
+    "pos": "대명사"
+  },
+  {
+    "word": "参る",
+    "reading": "まいる",
+    "meaning": "가다,오다",
+    "pos": "동사"
+  },
+  {
+    "word": "負ける",
+    "reading": "まける",
+    "meaning": "지다",
+    "pos": "동사"
+  },
+  {
+    "word": "まじめ",
+    "reading": "まじめ",
+    "meaning": "진심",
+    "pos": "명사"
+  },
+  {
+    "word": "真面目",
+    "reading": "まじめ",
+    "meaning": "성실",
+    "pos": "な형용사"
+  },
+  {
+    "word": "まず",
+    "reading": "まず",
+    "meaning": "우선",
+    "pos": "명사"
+  },
+  {
+    "word": "または",
+    "reading": "または",
+    "meaning": "또는",
+    "pos": "접속사"
+  },
+  {
+    "word": "間違える",
+    "reading": "まちがえる",
+    "meaning": "실수하다",
+    "pos": "동사"
+  },
+  {
+    "word": "間に合う",
+    "reading": "まにあう",
+    "meaning": "제시간에 대다",
+    "pos": "동사"
+  },
+  {
+    "word": "周り",
+    "reading": "まわり",
+    "meaning": "주위",
+    "pos": "명사"
+  },
+  {
+    "word": "回る",
+    "reading": "まわる",
+    "meaning": "돌아가다",
+    "pos": "동사"
+  },
+  {
+    "word": "漫画",
+    "reading": "まんが",
+    "meaning": "만화",
+    "pos": "명사"
+  },
+  {
+    "word": "真中",
+    "reading": "まんなか",
+    "meaning": "한가운데",
+    "pos": "명사"
+  },
+  {
+    "word": "見える",
+    "reading": "みえる",
+    "meaning": "보이다",
+    "pos": "동사"
+  },
+  {
+    "word": "湖",
+    "reading": "みずうみ",
+    "meaning": "호수",
+    "pos": "명사"
+  },
+  {
+    "word": "味噌",
+    "reading": "みそ",
+    "meaning": "된장",
+    "pos": "명사"
+  },
+  {
+    "word": "見つかる",
+    "reading": "みつかる",
+    "meaning": "발견되다",
+    "pos": "동사"
+  },
+  {
+    "word": "見つける",
+    "reading": "みつける",
+    "meaning": "발견하다",
+    "pos": "동사"
+  },
+  {
+    "word": "皆",
+    "reading": "みな",
+    "meaning": "모두",
+    "pos": "명사"
+  },
+  {
+    "word": "港",
+    "reading": "みなと",
+    "meaning": "항구",
+    "pos": "명사"
+  },
+  {
+    "word": "向かう",
+    "reading": "むかう",
+    "meaning": "향하다",
+    "pos": "동사"
+  },
+  {
+    "word": "迎える",
+    "reading": "むかえる",
+    "meaning": "맞이하다",
+    "pos": "동사"
+  },
+  {
+    "word": "昔",
+    "reading": "むかし",
+    "meaning": "옛날",
+    "pos": "명사"
+  },
+  {
+    "word": "虫",
+    "reading": "むし",
+    "meaning": "벌레",
+    "pos": "명사"
+  },
+  {
+    "word": "息子",
+    "reading": "むすこ",
+    "meaning": "아들",
+    "pos": "명사"
+  },
+  {
+    "word": "娘",
+    "reading": "むすめ",
+    "meaning": "딸",
+    "pos": "명사"
+  },
+  {
+    "word": "無理",
+    "reading": "むり",
+    "meaning": "무리",
+    "pos": "な형용사"
+  },
+  {
+    "word": "召し上がる",
+    "reading": "めしあがる",
+    "meaning": "드시다",
+    "pos": "동사"
+  },
+  {
+    "word": "珍しい",
+    "reading": "めずらしい",
+    "meaning": "드문",
+    "pos": "い형용사"
+  },
+  {
+    "word": "申し上げる",
+    "reading": "もうしあげる",
+    "meaning": "말씀드리다",
+    "pos": "동사"
+  },
+  {
+    "word": "申す",
+    "reading": "もうす",
+    "meaning": "말하다",
+    "pos": "동사"
+  },
+  {
+    "word": "もうすぐ",
+    "reading": "もうすぐ",
+    "meaning": "곧",
+    "pos": "명사"
+  },
+  {
+    "word": "もし",
+    "reading": "もし",
+    "meaning": "만약",
+    "pos": "부사"
+  },
+  {
+    "word": "もちろん",
+    "reading": "もちろん",
+    "meaning": "물론",
+    "pos": "부사"
+  },
+  {
+    "word": "もっとも",
+    "reading": "もっとも",
+    "meaning": "가장",
+    "pos": "접속사"
+  },
+  {
+    "word": "最も",
+    "reading": "もっとも",
+    "meaning": "가장",
+    "pos": "명사"
+  },
+  {
+    "word": "戻る",
+    "reading": "もどる",
+    "meaning": "돌아 가다",
+    "pos": "동사"
+  },
+  {
+    "word": "木綿",
+    "reading": "もめん",
+    "meaning": "면직물",
+    "pos": "명사"
+  },
+  {
+    "word": "もらう",
+    "reading": "もらう",
+    "meaning": "받다",
+    "pos": "동사"
+  },
+  {
+    "word": "森",
+    "reading": "もり",
+    "meaning": "숲",
+    "pos": "명사"
+  },
+  {
+    "word": "焼く",
+    "reading": "やく",
+    "meaning": "굽다",
+    "pos": "동사"
+  },
+  {
+    "word": "約束",
+    "reading": "やくそく",
+    "meaning": "약속",
+    "pos": "명사"
+  },
+  {
+    "word": "役に立つ",
+    "reading": "やくにたつ",
+    "meaning": "도움이 되다",
+    "pos": "동사"
+  },
+  {
+    "word": "焼ける",
+    "reading": "やける",
+    "meaning": "구워지다",
+    "pos": "동사"
+  },
+  {
+    "word": "優しい",
+    "reading": "やさしい",
+    "meaning": "부드러운",
+    "pos": "い형용사"
+  },
+  {
+    "word": "痩せる",
+    "reading": "やせる",
+    "meaning": "여위다",
+    "pos": "동사"
+  },
+  {
+    "word": "やっと",
+    "reading": "やっと",
+    "meaning": "겨우",
+    "pos": "부사"
+  },
+  {
+    "word": "やはり",
+    "reading": "やはり",
+    "meaning": "역시",
+    "pos": "부사"
+  },
+  {
+    "word": "止む",
+    "reading": "やむ",
+    "meaning": "멈추다",
+    "pos": "동사"
+  },
+  {
+    "word": "柔らかい",
+    "reading": "やわらかい",
+    "meaning": "부드러운",
+    "pos": "い형용사"
+  },
+  {
+    "word": "湯",
+    "reading": "ゆ",
+    "meaning": "뜨거운 물",
+    "pos": "명사"
+  },
+  {
+    "word": "輸出",
+    "reading": "ゆしゅつ",
+    "meaning": "수출",
+    "pos": "명사"
+  },
+  {
+    "word": "輸出する",
+    "reading": "ゆしゅつする",
+    "meaning": "수출하다",
+    "pos": "동사"
+  },
+  {
+    "word": "輸入",
+    "reading": "ゆにゅう",
+    "meaning": "수입",
+    "pos": "명사"
+  },
+  {
+    "word": "輸入する",
+    "reading": "ゆにゅうする",
+    "meaning": "수입하다",
+    "pos": "동사"
+  },
+  {
+    "word": "指",
+    "reading": "ゆび",
+    "meaning": "손가락",
+    "pos": "명사"
+  },
+  {
+    "word": "指輪",
+    "reading": "ゆびわ",
+    "meaning": "반지",
+    "pos": "명사"
+  },
+  {
+    "word": "夢",
+    "reading": "ゆめ",
+    "meaning": "꿈",
+    "pos": "명사"
+  },
+  {
+    "word": "揺れる",
+    "reading": "ゆれる",
+    "meaning": "흔들리다",
+    "pos": "동사"
+  },
+  {
+    "word": "用",
+    "reading": "よう",
+    "meaning": "용도",
+    "pos": "명사"
+  },
+  {
+    "word": "様",
+    "reading": "よう",
+    "meaning": "모양, 모습",
+    "pos": "명사"
+  },
+  {
+    "word": "用意",
+    "reading": "ようい",
+    "meaning": "준비",
+    "pos": "명사"
+  },
+  {
+    "word": "用事",
+    "reading": "ようじ",
+    "meaning": "용무",
+    "pos": "명사"
+  },
+  {
+    "word": "汚れる",
+    "reading": "よごれる",
+    "meaning": "더러워지다",
+    "pos": "동사"
+  },
+  {
+    "word": "予習",
+    "reading": "よしゅう",
+    "meaning": "예습",
+    "pos": "명사"
+  },
+  {
+    "word": "予定",
+    "reading": "よてい",
+    "meaning": "예정",
+    "pos": "명사"
+  },
+  {
+    "word": "予約",
+    "reading": "よやく",
+    "meaning": "예약",
+    "pos": "명사"
+  },
+  {
+    "word": "寄る",
+    "reading": "よる",
+    "meaning": "들리다",
+    "pos": "동사"
+  },
+  {
+    "word": "喜ぶ",
+    "reading": "よろこぶ",
+    "meaning": "기뻐하다",
+    "pos": "동사"
+  },
+  {
+    "word": "よろしい",
+    "reading": "よろしい",
+    "meaning": "좋다",
+    "pos": "い형용사"
+  },
+  {
+    "word": "理由",
+    "reading": "りゆう",
+    "meaning": "이유",
+    "pos": "명사"
+  },
+  {
+    "word": "両方",
+    "reading": "りょうほう",
+    "meaning": "모두",
+    "pos": "명사"
+  },
+  {
+    "word": "旅館",
+    "reading": "りょかん",
+    "meaning": "여관",
+    "pos": "명사"
+  },
+  {
+    "word": "利用",
+    "reading": "りよう",
+    "meaning": "이용",
+    "pos": "명사"
+  },
+  {
+    "word": "留守",
+    "reading": "るす",
+    "meaning": "부재중",
+    "pos": "명사"
+  },
+  {
+    "word": "冷房",
+    "reading": "れいぼう",
+    "meaning": "냉방",
+    "pos": "명사"
+  },
+  {
+    "word": "歴史",
+    "reading": "れきし",
+    "meaning": "역사",
+    "pos": "명사"
+  },
+  {
+    "word": "連絡",
+    "reading": "れんらく",
+    "meaning": "연락",
+    "pos": "명사"
+  },
+  {
+    "word": "沸かす",
+    "reading": "わかす",
+    "meaning": "끓이다",
+    "pos": "동사"
+  },
+  {
+    "word": "別れる",
+    "reading": "わかれる",
+    "meaning": "헤어지다",
+    "pos": "동사"
+  },
+  {
+    "word": "沸く",
+    "reading": "わく",
+    "meaning": "끓다",
+    "pos": "동사"
+  },
+  {
+    "word": "訳",
+    "reading": "わけ",
+    "meaning": "의미",
+    "pos": "명사"
+  },
+  {
+    "word": "忘れ物",
+    "reading": "わすれもの",
+    "meaning": "분실물",
+    "pos": "명사"
+  },
+  {
+    "word": "笑う",
+    "reading": "わらう",
+    "meaning": "웃다",
+    "pos": "동사"
+  },
+  {
+    "word": "割合",
+    "reading": "わりあい",
+    "meaning": "비율",
+    "pos": "명사"
+  },
+  {
+    "word": "割れる",
+    "reading": "われる",
+    "meaning": "부수다",
+    "pos": "동사"
+  },
+  {
+    "word": "アクセサリー",
+    "reading": "アクセサリー",
+    "meaning": "액세서리",
+    "pos": "명사"
+  },
+  {
+    "word": "アジア",
+    "reading": "アジア",
+    "meaning": "아시아",
+    "pos": "명사"
+  },
+  {
+    "word": "アナウンサー",
+    "reading": "アナウンサー",
+    "meaning": "아나운서",
+    "pos": "명사"
+  },
+  {
+    "word": "アフリカ",
+    "reading": "アフリカ",
+    "meaning": "아프리카",
+    "pos": "명사"
+  },
+  {
+    "word": "アメリカ",
+    "reading": "アメリカ",
+    "meaning": "미국",
+    "pos": "명사"
+  },
+  {
+    "word": "アルコール",
+    "reading": "アルコール",
+    "meaning": "알코올",
+    "pos": "명사"
+  },
+  {
+    "word": "アルバイト",
+    "reading": "アルバイト",
+    "meaning": "아르바이트",
+    "pos": "명사"
+  },
+  {
+    "word": "エスカレーター",
+    "reading": "エスカレーター",
+    "meaning": "에스컬레이터",
+    "pos": "명사"
+  },
+  {
+    "word": "オートバイ",
+    "reading": "オートバイ",
+    "meaning": "오토바이",
+    "pos": "명사"
+  },
+  {
+    "word": "オーバー",
+    "reading": "オーバー",
+    "meaning": "오버, 초과",
+    "pos": "명사"
+  },
+  {
+    "word": "カーテン",
+    "reading": "カーテン",
+    "meaning": "커튼",
+    "pos": "명사"
+  },
+  {
+    "word": "ガス",
+    "reading": "ガス",
+    "meaning": "가스",
+    "pos": "명사"
+  },
+  {
+    "word": "ガソリン",
+    "reading": "ガソリン",
+    "meaning": "가솔린",
+    "pos": "명사"
+  },
+  {
+    "word": "ガソリンスタンド",
+    "reading": "ガソリンスタンド",
+    "meaning": "주유소",
+    "pos": "명사"
+  },
+  {
+    "word": "ガラス",
+    "reading": "ガラス",
+    "meaning": "유리",
+    "pos": "명사"
+  },
+  {
+    "word": "ケーキ",
+    "reading": "ケーキ",
+    "meaning": "케이크",
+    "pos": "명사"
+  },
+  {
+    "word": "コンサート",
+    "reading": "コンサート",
+    "meaning": "콘서트",
+    "pos": "명사"
+  },
+  {
+    "word": "コンピュータ",
+    "reading": "コンピュータ",
+    "meaning": "컴퓨터",
+    "pos": "명사"
+  },
+  {
+    "word": "サラダ",
+    "reading": "サラダ",
+    "meaning": "샐러드",
+    "pos": "명사"
+  },
+  {
+    "word": "サンダル",
+    "reading": "サンダル",
+    "meaning": "샌들",
+    "pos": "명사"
+  },
+  {
+    "word": "サンドイッチ",
+    "reading": "サンドイッチ",
+    "meaning": "샌드위치",
+    "pos": "명사"
+  },
+  {
+    "word": "ジャム",
+    "reading": "ジャム",
+    "meaning": "잼",
+    "pos": "명사"
+  },
+  {
+    "word": "スクリーン",
+    "reading": "スクリーン",
+    "meaning": "스크린",
+    "pos": "명사"
+  },
+  {
+    "word": "ステレオ",
+    "reading": "ステレオ",
+    "meaning": "스테레오",
+    "pos": "명사"
+  },
+  {
+    "word": "ステーキ",
+    "reading": "ステーキ",
+    "meaning": "스테이크",
+    "pos": "명사"
+  },
+  {
+    "word": "スーツ",
+    "reading": "スーツ",
+    "meaning": "정장",
+    "pos": "명사"
+  },
+  {
+    "word": "スーツケース",
+    "reading": "スーツケース",
+    "meaning": "가방",
+    "pos": "명사"
+  },
+  {
+    "word": "スーパー",
+    "reading": "スーパー",
+    "meaning": "슈퍼마켓",
+    "pos": "명사"
+  },
+  {
+    "word": "ソフト",
+    "reading": "ソフト",
+    "meaning": "소프트",
+    "pos": "명사"
+  },
+  {
+    "word": "タイプ",
+    "reading": "タイプ",
+    "meaning": "유형",
+    "pos": "명사"
+  },
+  {
+    "word": "チェックする",
+    "reading": "チェックする",
+    "meaning": "확인하다",
+    "pos": "동사"
+  },
+  {
+    "word": "テキスト",
+    "reading": "テキスト",
+    "meaning": "텍스트",
+    "pos": "명사"
+  },
+  {
+    "word": "テニス",
+    "reading": "テニス",
+    "meaning": "테니스",
+    "pos": "명사"
+  },
+  {
+    "word": "ハンドバッグ",
+    "reading": "ハンドバッグ",
+    "meaning": "핸드백",
+    "pos": "명사"
+  },
+  {
+    "word": "ハンバーグ",
+    "reading": "ハンバーグ",
+    "meaning": "햄버그스테이크",
+    "pos": "명사"
+  },
+  {
+    "word": "パソコン",
+    "reading": "パソコン",
+    "meaning": "컴퓨터",
+    "pos": "명사"
+  },
+  {
+    "word": "パパ",
+    "reading": "パパ",
+    "meaning": "아빠",
+    "pos": "명사"
+  },
+  {
+    "word": "パート",
+    "reading": "パート",
+    "meaning": "아르바이트",
+    "pos": "명사"
+  },
+  {
+    "word": "ビル",
+    "reading": "ビル",
+    "meaning": "빌딩",
+    "pos": "명사"
+  },
+  {
+    "word": "ピアノ",
+    "reading": "ピアノ",
+    "meaning": "피아노",
+    "pos": "명사"
+  },
+  {
+    "word": "ファックス",
+    "reading": "ファックス",
+    "meaning": "팩스",
+    "pos": "명사"
+  },
+  {
+    "word": "プレゼント",
+    "reading": "プレゼント",
+    "meaning": "선물",
+    "pos": "명사"
+  },
+  {
+    "word": "ベル",
+    "reading": "ベル",
+    "meaning": "벨",
+    "pos": "명사"
+  },
+  {
+    "word": "レジ",
+    "reading": "レジ",
+    "meaning": "레지스터",
+    "pos": "명사"
+  },
+  {
+    "word": "レポート",
+    "reading": "レポート",
+    "meaning": "보고서",
+    "pos": "명사"
+  },
+  {
+    "word": "ワープロ",
+    "reading": "ワープロ",
+    "meaning": "워드 프로세서",
+    "pos": "명사"
+  },
+  {
+    "word": "下がる",
+    "reading": "下がる",
+    "meaning": "내리다",
+    "pos": "동사"
+  },
+  {
+    "word": "入院する",
+    "reading": "入院する",
+    "meaning": "입원하다",
+    "pos": "동사"
+  },
+  {
+    "word": "出発する",
+    "reading": "出発する",
+    "meaning": "출발하다",
+    "pos": "동사"
+  },
+  {
+    "word": "御主人",
+    "reading": "御主人",
+    "meaning": "주인님",
+    "pos": "명사"
+  },
+  {
+    "word": "心配する",
+    "reading": "心配する",
+    "meaning": "걱정하다",
+    "pos": "동사"
+  },
+  {
+    "word": "承知する",
+    "reading": "承知する",
+    "meaning": "승낙하다",
+    "pos": "동사"
+  },
+  {
+    "word": "拝見する",
+    "reading": "拝見する",
+    "meaning": "보다",
+    "pos": "동사"
+  },
+  {
+    "word": "支度する",
+    "reading": "支度する",
+    "meaning": "준비하다",
+    "pos": "동사"
+  },
+  {
+    "word": "放送する",
+    "reading": "放送する",
+    "meaning": "방송하다",
+    "pos": "동사"
+  },
+  {
+    "word": "楽しむ",
+    "reading": "楽しむ",
+    "meaning": "즐기다",
+    "pos": "동사"
+  },
+  {
+    "word": "決る",
+    "reading": "決る",
+    "meaning": "결정되다",
+    "pos": "동사"
+  },
+  {
+    "word": "泳ぎ方",
+    "reading": "泳ぎ方",
+    "meaning": "수영하는 방법",
+    "pos": "명사"
+  },
+  {
+    "word": "準備する",
+    "reading": "準備する",
+    "meaning": "준비하다",
+    "pos": "동사"
+  },
+  {
+    "word": "経験する",
+    "reading": "経験する",
+    "meaning": "경험하다",
+    "pos": "동사"
+  },
+  {
+    "word": "落ちる",
+    "reading": "落ちる",
+    "meaning": "떨어지다",
+    "pos": "동사"
+  },
+  {
+    "word": "起す",
+    "reading": "起す",
+    "meaning": "깨우다",
+    "pos": "동사"
+  },
+  {
+    "word": "退院する",
+    "reading": "退院する",
+    "meaning": "퇴원하다",
+    "pos": "동사"
+  },
+  {
+    "word": "運転する",
+    "reading": "運転する",
+    "meaning": "운전하다",
+    "pos": "동사"
+  },
+  {
+    "word": "降り出す",
+    "reading": "降り出す",
+    "meaning": "비가 오기 시작하다",
+    "pos": "동사"
+  },
+  {
+    "word": "集る",
+    "reading": "集る",
+    "meaning": "모이다",
+    "pos": "동사"
+  },
+  {
+    "word": "いただく",
+    "reading": "頂く",
+    "meaning": "받다",
+    "pos": "동사"
+  },
+  {
+    "word": "～員",
+    "reading": "～いん",
+    "meaning": "~원(소속)",
+    "pos": "접사"
+  },
+  {
+    "word": "～おき",
+    "reading": "～おき",
+    "meaning": "~걸러",
+    "pos": "접사"
+  },
+  {
+    "word": "～おわる",
+    "reading": "～おわる",
+    "meaning": "다 ~하다",
+    "pos": "접사"
+  },
+  {
+    "word": "～家",
+    "reading": "～か",
+    "meaning": "~가(전문가)",
+    "pos": "접사"
+  },
+  {
+    "word": "～会",
+    "reading": "～かい",
+    "meaning": "~모임",
+    "pos": "접사"
+  },
+  {
+    "word": "～学部",
+    "reading": "～がくぶ",
+    "meaning": "~학부",
+    "pos": "접사"
+  },
+  {
+    "word": "～区",
+    "reading": "～く",
+    "meaning": "~구(행정)",
+    "pos": "접사"
+  },
+  {
+    "word": "～君",
+    "reading": "～くん",
+    "meaning": "~군",
+    "pos": "접사"
+  },
+  {
+    "word": "～軒",
+    "reading": "～けん",
+    "meaning": "~채(집)",
+    "pos": "접사"
+  },
+  {
+    "word": "～ございます",
+    "reading": "～ございます",
+    "meaning": "~있습니다(공손)",
+    "pos": "접사"
+  },
+  {
+    "word": "～様",
+    "reading": "～さま",
+    "meaning": "~님",
+    "pos": "접사"
+  },
+  {
+    "word": "～式",
+    "reading": "～しき",
+    "meaning": "~식",
+    "pos": "접사"
+  },
+  {
+    "word": "～しまう",
+    "reading": "～しまう",
+    "meaning": "~해 버리다",
+    "pos": "접사"
+  },
+  {
+    "word": "～製",
+    "reading": "～せい",
+    "meaning": "~제",
+    "pos": "접사"
+  },
+  {
+    "word": "～代",
+    "reading": "～だい",
+    "meaning": "~대(요금/연령)",
+    "pos": "접사"
+  },
+  {
+    "word": "～だす",
+    "reading": "～だす",
+    "meaning": "~하기 시작하다",
+    "pos": "접사"
+  },
+  {
+    "word": "建て",
+    "reading": "～だて",
+    "meaning": "~층 건물",
+    "pos": "명사"
+  },
+  {
+    "word": "～ちゃん",
+    "reading": "～ちゃん",
+    "meaning": "~짱(애칭)",
+    "pos": "접사"
+  },
+  {
+    "word": "～町",
+    "reading": "～ちょう",
+    "meaning": "~동(행정)",
+    "pos": "접사"
+  },
+  {
+    "word": "～ついて",
+    "reading": "～ついて",
+    "meaning": "~에 대해",
+    "pos": "접사"
+  },
+  {
+    "word": "～続ける",
+    "reading": "～つづける",
+    "meaning": "계속 ~하다",
+    "pos": "접사"
+  },
+  {
+    "word": "～にくい",
+    "reading": "～にくい",
+    "meaning": "~하기 어려운",
+    "pos": "접사"
+  },
+  {
+    "word": "～始める",
+    "reading": "～はじめる",
+    "meaning": "~하기 시작하다",
+    "pos": "접사"
+  },
+  {
+    "word": "～ばかり",
+    "reading": "～ばかり",
+    "meaning": "~만, 막",
+    "pos": "접사"
+  },
+  {
+    "word": "～まま",
+    "reading": "～まま",
+    "meaning": "~인 채로",
+    "pos": "접사"
+  },
+  {
+    "word": "～目",
+    "reading": "～め",
+    "meaning": "~번째",
+    "pos": "접사"
+  },
+  {
+    "word": "～やすい",
+    "reading": "～やすい",
+    "meaning": "~하기 쉽다",
+    "pos": "접사"
+  },
+  {
+    "word": "～よると",
+    "reading": "～よると",
+    "meaning": "~에 의하면",
+    "pos": "접사"
+  }
 ]
